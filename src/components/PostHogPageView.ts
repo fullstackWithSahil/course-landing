@@ -5,18 +5,18 @@ import { usePathname, useSearchParams } from "next/navigation";
 import { usePostHog } from "posthog-js/react";
 
 export default function PostHogPageView() {
-	const pathname = usePathname();
-	const searchParams = useSearchParams();
-	const posthog = usePostHog();
+    const pathname = usePathname();
+    const searchParams = useSearchParams();
+    const posthog = usePostHog();
 
-	useEffect(() => {
-		if (posthog) {
-			posthog.capture("$pageview", {
-				$current_url:
-					window.location.origin + pathname + searchParams.toString(),
-			});
-		}
-	}, [pathname, searchParams, posthog]);
+    useEffect(() => {
+        if (posthog) {
+            posthog.capture("$pageview", {
+                $current_url:
+                    window.location.origin + pathname + searchParams.toString(),
+            });
+        }
+    }, [pathname, searchParams, posthog]);
 
-	return null; // This component doesn't render anything visible
+    return null; // This component doesn't render anything visible
 }

@@ -10,45 +10,46 @@ import PostHogPageView from "@/components/PostHogPageView";
 import { cn } from "@/lib/utils";
 import { PostHogProvider } from "./providers";
 
-const inter = Inter({subsets:['latin'],variable:'--font-sans'});
+const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 const geistSans = Geist({
-	variable: "--font-geist-sans",
-	subsets: ["latin"],
+    variable: "--font-geist-sans",
+    subsets: ["latin"],
 });
 
 const geistMono = Geist_Mono({
-	variable: "--font-geist-mono",
-	subsets: ["latin"],
+    variable: "--font-geist-mono",
+    subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-	title: "Get your course online today | Buisnesstools",
-	description: "Our website helps course creators get thier course online without being profecient in tech",
+    title: "Get your course online today | Buisnesstools",
+    description:
+        "Our website helps course creators get thier course online without being profecient in tech",
 };
 
 export default function RootLayout({
-	children,
+    children,
 }: Readonly<{
-	children: React.ReactNode;
+    children: React.ReactNode;
 }>) {
-	return (
-		<ClerkProvider>
-			<html lang="en" className={cn("font-sans", inter.variable)}>
-				<PostHogProvider>
-				<body
-					className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-				>
-						<PublicNavbar/>
-						<Suspense>
-							<PostHogPageView/>
-						</Suspense>
-						{children}
-						<Toaster />
-						<Footer/>
-				</body>
-				</PostHogProvider>
-			</html>
-		</ClerkProvider>
-	);
+    return (
+        <ClerkProvider>
+            <html lang="en" className={cn("font-sans", inter.variable)}>
+                <PostHogProvider>
+                    <body
+                        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+                    >
+                        <PublicNavbar />
+                        <Suspense>
+                            <PostHogPageView />
+                        </Suspense>
+                        {children}
+                        <Toaster />
+                        <Footer />
+                    </body>
+                </PostHogProvider>
+            </html>
+        </ClerkProvider>
+    );
 }

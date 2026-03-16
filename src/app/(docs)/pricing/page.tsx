@@ -1,9 +1,9 @@
-import Pricing from './Pricing'
+import Pricing from "./Pricing";
 
 export default function page() {
-  return (
-    <div>
-        <Pricing/>
-    </div>
-  )
+    return (
+        <div>
+            <Pricing />
+        </div>
+    );
 }
