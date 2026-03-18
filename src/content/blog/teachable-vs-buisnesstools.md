@@ -294,7 +294,7 @@ We built BusinessTools on a simple belief: course creators deserve more than gen
 
 1. **Schedule Your Free Consultation:** Let's [discuss your vision](https://buisnesstools.in/contact-us) and show you exactly how we'll bring it to life.
 
-2. **Start Risk-Free with Pay-As-You-Go:** Just $2 per student, no monthly commitment. [Test us completely risk-free.](https://buisnesstools.in/onboarding)
+2. **Start Risk-Free with Pay-As-You-Go:** Just $2 per student, no monthly commitment. [Test us completely risk-free.](https://app.buisnesstools.in/onboarding)
 
 3. **Free Migration from Teachable:** Switching platforms? We'll handle everything—content transfer, student migration, custom design, and setup. **Completely free.** [**Start your migration →**](https://buisnesstools.in/contact-us)
 

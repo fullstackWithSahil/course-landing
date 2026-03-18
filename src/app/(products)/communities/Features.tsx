@@ -1,12 +1,9 @@
 import {
     FileText,
     MessageCircle,
-    Shield,
     Target,
     Users,
-    Video,
 } from "lucide-react";
-import React from "react";
 
 export default function Features() {
     return (

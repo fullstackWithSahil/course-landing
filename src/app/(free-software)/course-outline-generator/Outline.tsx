@@ -1,14 +1,15 @@
 "use client";
 
-import { Card, CardHeader, CardTitle } from "@/components/ui/card";
-import Lesson from "./Lesson";
+import type { ResponseType } from "@/app/(free-software)/course-outline-generator/Form";
 import {
     Accordion,
     AccordionContent,
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion";
-import { ResponseType } from "@/app/(free-software)/course-outline-generator/Form";
+import { Card, CardHeader, CardTitle } from "@/components/ui/card";
+import Lesson from "./Lesson";
+
 
 export default function Outline({ outline }: { outline: ResponseType }) {
     return (

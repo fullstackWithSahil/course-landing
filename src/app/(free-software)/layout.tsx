@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import type { ReactNode } from "react";
 import { CheckCircle, Star, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import logo from "@/assets/logo.1141418a.png";
@@ -46,10 +46,10 @@ export default function layout({ children }: { children: ReactNode }) {
                         </div>
                     </div>
 
-                    <Link className={buttonVariants()} href={"/onboarding"}>
+                    <a className={buttonVariants()} href={"https://app.buisnesstools.in/onboarding"}>
                         <span>Start Free Trial</span>
                         <ArrowRight className="w-4 h-4" />
-                    </Link>
+                    </a>
 
                     <div className="text-center text-blue-100 text-sm">
                         <div className="flex items-center justify-center space-x-1 mb-1">

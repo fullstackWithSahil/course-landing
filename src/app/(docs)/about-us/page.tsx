@@ -451,12 +451,12 @@ export default function AboutUsPage() {
                                     <span>Free consultancy included</span>
                                 </li>
                             </ul>
-                            <Link
-                                href={"/onboarding"}
+                            <a
+                                href={"https://app.buisnesstools.in/onboarding"}
                                 className="w-full bg-white hover:bg-slate-100 text-slate-900 font-bold py-4 px-6 rounded-lg transition-all duration-200"
                             >
                                 Start Free Today
-                            </Link>
+                            </a>
                         </div>
 
                         {/* Ready to Scale */}
@@ -519,13 +519,13 @@ export default function AboutUsPage() {
                     <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
                         Let's Build Something Great Together
                     </h2>
-                    <Link
-                        href={"/onboarding"}
+                    <a
+                        href={"https://app.buisnesstools.in/onboarding"}
                         className="group bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 px-10 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl inline-flex items-center"
                     >
                         Get Started Today
                         <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-200" />
-                    </Link>
+                    </a>
                 </div>
             </section>
         </div>

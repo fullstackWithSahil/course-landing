@@ -45,13 +45,13 @@ export default function CoursesPage() {
                         handles the tech so you can focus on teaching.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <Link
-                            href={"/onboarding"}
+                        <a
+                            href={"https://app.buisnesstools.in/onboarding"}    
                             className="bg-white hover:bg-slate-100 text-slate-900 font-bold py-4 px-8 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl inline-flex items-center justify-center"
                         >
                             Start Creating Courses
                             <ArrowRight className="w-5 h-5 ml-2" />
-                        </Link>
+                        </a>
                         {/* <button className="bg-transparent hover:bg-white/10 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-200 border-2 border-white/30 hover:border-white/50 inline-flex items-center justify-center">
 							<Play className="w-5 h-5 mr-2" />
 							Watch Demo
@@ -455,12 +455,12 @@ export default function CoursesPage() {
                                     <span>Custom branded website</span>
                                 </li>
                             </ul>
-                            <Link
-                                href={"/onboarding"}
+                            <a
+                                href={"https://app.buisnesstools.in/onboarding"}
                                 className="w-full bg-white hover:bg-slate-100 text-slate-900 font-bold py-4 px-6 rounded-lg transition-all duration-200"
                             >
                                 Start Creating Free
-                            </Link>
+                            </a>
                         </div>
 
                         {/* Pro Plan */}
@@ -531,13 +531,13 @@ export default function CoursesPage() {
                     <p className="text-lg text-slate-600 mb-8">
                         Stop fighting with complicated tools. Start teaching.
                     </p>
-                    <Link
-                        href={"/onboarding"}
+                    <a
+                        href={"https://app.buisnesstools.in/onboarding"}
                         className="group bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 px-10 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl inline-flex items-center"
                     >
                         Create Your First Course
                         <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-200" />
-                    </Link>
+                    </a>
                 </div>
             </section>
         </div>

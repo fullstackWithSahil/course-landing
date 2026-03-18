@@ -19,7 +19,7 @@ export default function PricingCard({
         if (price === "2 per student") return price;
 
         const numericPrice = parseFloat(price);
-        if (isNaN(numericPrice)) return price;
+        if (Number.isNaN(numericPrice)) return price;
 
         if (isAnnual) {
             // Apply 25% discount for annual billing
@@ -56,14 +56,14 @@ export default function PricingCard({
             <div>
                 <p className="text-4xl font-extrabold">
                     $
-                    {typeof pricingData == "string"
+                    {typeof pricingData === "string"
                         ? pricingData
                         : pricingData.monthly}
-                    {price != "2 per student" && (
+                    {price !== "2 per student" && (
                         <span className="text-lg font-normal">/month</span>
                     )}
                 </p>
-                {typeof pricingData != "string" && isAnnual && (
+                {typeof pricingData !== "string" && isAnnual && (
                     <div className="mt-2">
                         <p className="text-sm opacity-75">
                             <span className="line-through">
@@ -80,8 +80,8 @@ export default function PricingCard({
                 )}
             </div>
             <ul className="space-y-4 my-8">
-                {features.map((feature, index) => (
-                    <li key={index} className="flex items-center gap-3">
+                {features.map((feature) => (
+                    <li key={feature} className="flex items-center gap-3">
                         <Check
                             size={24}
                             className={
@@ -93,8 +93,8 @@ export default function PricingCard({
                 ))}
             </ul>
             <div className="pb-2 sm:pt-4 space-y-3">
-                <Link
-                    href={"/onboarding"}
+                <a
+                    href={"https://app.buisnesstools.in/onboarding"}
                     className={`w-full flex items-center justify-center cursor-pointer py-3 rounded-lg font-semibold text-lg transition ${
                         highlighted
                             ? "bg-white text-blue-600 hover:bg-gray-100"
@@ -102,7 +102,7 @@ export default function PricingCard({
                     }`}
                 >
                     Get Started
-                </Link>
+                </a>
             </div>
         </div>
     );

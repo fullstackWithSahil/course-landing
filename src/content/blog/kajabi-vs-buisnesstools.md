@@ -178,7 +178,7 @@ We've built BusinessTools on the belief that course creators deserve more than j
 ### Ready to Make Your Decision?
 
 1. **Schedule a Free Consultation:** Let's [discuss](https://buisnesstools.in/contact-us) your specific needs and see if we're the right fit.
-2. **Start with Pay-As-You-Go:** No commitment, just $2 per student. [Test us risk-free.](https://buisnesstools.in/onboarding)
+2. **Start with Pay-As-You-Go:** No commitment, just $2 per student. [Test us risk-free.](https://app.buisnesstools.in/onboarding)
 3. **Special Migration Offer:** Switching from Kajabi? We'll handle your entire migration for free, including content transfer, design, and setup. [**Learn more →**](https://buisnesstools.in/contact-us)
 
 Have questions? Our support team is standing by. Most responses within **60 minutes**. **Contact us now.**

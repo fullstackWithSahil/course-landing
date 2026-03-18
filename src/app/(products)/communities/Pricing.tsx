@@ -11,8 +11,9 @@ export default function Pricing() {
 
     async function handleProTier() {
         if (!isSignedIn) {
+            const newLocal = "/communities/redirect";
             //redirect to sign in which will redirect to dodo url after you signIn
-            return openSignIn({ forceRedirectUrl: "/communities/redirect" });
+            return openSignIn({ forceRedirectUrl: newLocal });
         } else {
             router.push("/communities/redirect");
         }
@@ -31,33 +32,33 @@ export default function Pricing() {
                 </p>
                 <ul className="space-y-3 mb-8">
                     <li className="flex items-center space-x-3">
-                        <X className="w-5 h-5 text-red-400 flex-shrink-0" />
+                        <X className="w-5 h-5 text-red-400 shrink-0" />
                         <span>No tiered members</span>
                     </li>
                     <li className="flex items-center space-x-3">
-                        <X className="w-5 h-5 text-red-400 flex-shrink-0" />
+                        <X className="w-5 h-5 text-red-400 shrink-0" />
                         <span>Limited server capacity</span>
                     </li>
                     <li className="flex items-center space-x-3">
-                        <CheckCircle className="w-5 h-5 text-green-300 flex-shrink-0" />
+                        <CheckCircle className="w-5 h-5 text-green-300 shrink-0" />
                         <span>Images & files (30 day retention)</span>
                     </li>
                     <li className="flex items-center space-x-3">
-                        <CheckCircle className="w-5 h-5 text-green-300 flex-shrink-0" />
+                        <CheckCircle className="w-5 h-5 text-green-300 shrink-0" />
                         <span>Basic community features</span>
                     </li>
                 </ul>
-                <Link
-                    href={"/onboarding"}
+                <a
+                    href={"https://app.buisnesstools.in/onboarding"}
                     className="w-full bg-white/20 hover:bg-white/30 text-white font-bold py-4 px-6 rounded-lg transition-all duration-200 border border-white/30"
                 >
                     Get Started Free
-                </Link>
+                </a>
             </div>
 
             {/* Pro Plan */}
-            <div className="bg-gradient-to-br from-teal-500/20 to-blue-500/20 backdrop-blur-sm rounded-2xl p-8 border-2 border-teal-400/50 relative">
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-teal-400 to-blue-400 text-white px-4 py-1 rounded-full text-sm font-bold">
+            <div className="bg-linear-to-br from-teal-500/20 to-blue-500/20 backdrop-blur-sm rounded-2xl p-8 border-2 border-teal-400/50 relative">
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-linear-to-r from-teal-400 to-blue-400 text-white px-4 py-1 rounded-full text-sm font-bold">
                     POPULAR
                 </div>
                 <h3 className="text-2xl font-bold mb-4">Pro</h3>
@@ -70,19 +71,19 @@ export default function Pricing() {
                 </p>
                 <ul className="space-y-3 mb-8">
                     <li className="flex items-center space-x-3">
-                        <CheckCircle className="w-5 h-5 text-green-300 flex-shrink-0" />
+                        <CheckCircle className="w-5 h-5 text-green-300 shrink-0" />
                         <span>Tiered members system</span>
                     </li>
                     <li className="flex items-center space-x-3">
-                        <CheckCircle className="w-5 h-5 text-green-300 flex-shrink-0" />
+                        <CheckCircle className="w-5 h-5 text-green-300 shrink-0" />
                         <span>Unlimited members</span>
                     </li>
                     <li className="flex items-center space-x-3">
-                        <CheckCircle className="w-5 h-5 text-green-300 flex-shrink-0" />
+                        <CheckCircle className="w-5 h-5 text-green-300 shrink-0" />
                         <span>Images & files (lifetime month retention)</span>
                     </li>
                     <li className="flex items-center space-x-3">
-                        <CheckCircle className="w-5 h-5 text-green-300 flex-shrink-0" />
+                        <CheckCircle className="w-5 h-5 text-green-300 shrink-0" />
                         <span>Priority support & onboarding</span>
                     </li>
                 </ul>
@@ -95,7 +96,7 @@ export default function Pricing() {
             </div>
 
             {/* Custom Plan */}
-            <div className="bg-gradient-to-br from-teal-500/20 to-blue-500/20 backdrop-blur-sm rounded-2xl p-8 border-2 border-teal-400/50 relative">
+            <div className="bg-linear-to-br from-teal-500/20 to-blue-500/20 backdrop-blur-sm rounded-2xl p-8 border-2 border-teal-400/50 relative">
                 <h3 className="text-2xl font-bold mb-4">Custom</h3>
                 <div className="mb-6">
                     <span className="text-4xl font-bold">Custom</span>
@@ -105,19 +106,19 @@ export default function Pricing() {
                 </p>
                 <ul className="space-y-3 mb-8">
                     <li className="flex items-center space-x-3">
-                        <CheckCircle className="w-5 h-5 text-green-300 flex-shrink-0" />
+                        <CheckCircle className="w-5 h-5 text-green-300 shrink-0" />
                         <span>Tiered members system</span>
                     </li>
                     <li className="flex items-center space-x-3">
-                        <CheckCircle className="w-5 h-5 text-green-300 flex-shrink-0" />
+                        <CheckCircle className="w-5 h-5 text-green-300 shrink-0" />
                         <span>Unlimited members</span>
                     </li>
                     <li className="flex items-center space-x-3">
-                        <CheckCircle className="w-5 h-5 text-green-300 flex-shrink-0" />
+                        <CheckCircle className="w-5 h-5 text-green-300 shrink-0" />
                         <span>Images & files (6 month retention)</span>
                     </li>
                     <li className="flex items-center space-x-3">
-                        <CheckCircle className="w-5 h-5 text-green-300 flex-shrink-0" />
+                        <CheckCircle className="w-5 h-5 text-green-300 shrink-0" />
                         <span>Priority support & onboarding</span>
                     </li>
                 </ul>

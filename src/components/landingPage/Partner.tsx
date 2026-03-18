@@ -184,12 +184,12 @@ export default function PartnerSection() {
                     <p className="text-slate-600 mb-8 max-w-2xl mx-auto">
                         Join us and choose a partner, not just a platform.
                     </p>
-                    <Link
-                        href={"/onboarding"}
+                    <a
+                        href={"https://app.buisnesstools.in/onboarding"}
                         className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 px-8 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl"
                     >
                         Launch Your Course Website
-                    </Link>
+                    </a>
                     {/* <p className="text-slate-500 text-sm mt-4">
 						No credit card required • Setup in 5 minutes • Cancel anytime
 					</p> */}
