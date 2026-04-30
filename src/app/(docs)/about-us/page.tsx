@@ -151,7 +151,7 @@ export default function AboutUsPage() {
             </section>
 
             {/* We're With You */}
-            <section className="py-20 px-6 bg-gradient-to-br from-indigo-600 via-purple-600 to-indigo-700 text-white relative overflow-hidden">
+            <section className="py-20 px-6 bg-linear-to-br from-indigo-600 via-purple-600 to-indigo-700 text-white relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
                     <div className="absolute top-10 left-10 w-96 h-96 bg-white rounded-full blur-3xl"></div>
                     <div className="absolute bottom-10 right-10 w-96 h-96 bg-white rounded-full blur-3xl"></div>
@@ -324,7 +324,7 @@ export default function AboutUsPage() {
                         </div>
                     </div>
 
-                    <div className="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-2xl p-8 md:p-12 border border-indigo-100 text-center">
+                    <div className="bg-linear-to-r from-indigo-50 to-purple-50 rounded-2xl p-8 md:p-12 border border-indigo-100 text-center">
                         <p className="text-xl md:text-2xl text-slate-800 leading-relaxed italic">
                             "Building a successful education business is about
                             more than just choosing the right software. It's
@@ -354,7 +354,7 @@ export default function AboutUsPage() {
 
                             <div className="space-y-6">
                                 <div className="flex items-start space-x-4">
-                                    <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center shrink-0">
                                         <Code className="w-6 h-6 text-indigo-600" />
                                     </div>
                                     <div>
@@ -370,7 +370,7 @@ export default function AboutUsPage() {
                                 </div>
 
                                 <div className="flex items-start space-x-4">
-                                    <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center shrink-0">
                                         <TrendingUp className="w-6 h-6 text-purple-600" />
                                     </div>
                                     <div>
@@ -386,7 +386,7 @@ export default function AboutUsPage() {
                                 </div>
 
                                 <div className="flex items-start space-x-4">
-                                    <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center shrink-0">
                                         <Sparkles className="w-6 h-6 text-teal-600" />
                                     </div>
                                     <div>
@@ -415,7 +415,7 @@ export default function AboutUsPage() {
             </section>
 
             {/* Ready to Get Started - CTA Section */}
-            <section className="py-20 px-6 bg-gradient-to-br from-slate-900 via-indigo-900 to-slate-900 text-white">
+            <section className="py-20 px-6 bg-linear-to-br from-slate-900 via-indigo-900 to-slate-900 text-white">
                 <div className="max-w-5xl mx-auto">
                     <div className="text-center mb-12">
                         <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -439,15 +439,15 @@ export default function AboutUsPage() {
                             </p>
                             <ul className="space-y-3 mb-8">
                                 <li className="flex items-center space-x-3">
-                                    <Check className="w-5 h-5 text-green-400 flex-shrink-0" />
+                                    <Check className="w-5 h-5 text-green-400 shrink-0" />
                                     <span>No monthly fees</span>
                                 </li>
                                 <li className="flex items-center space-x-3">
-                                    <Check className="w-5 h-5 text-green-400 flex-shrink-0" />
+                                    <Check className="w-5 h-5 text-green-400 shrink-0" />
                                     <span>Full platform access</span>
                                 </li>
                                 <li className="flex items-center space-x-3">
-                                    <Check className="w-5 h-5 text-green-400 flex-shrink-0" />
+                                    <Check className="w-5 h-5 text-green-400 shrink-0" />
                                     <span>Free consultancy included</span>
                                 </li>
                             </ul>
@@ -460,7 +460,7 @@ export default function AboutUsPage() {
                         </div>
 
                         {/* Ready to Scale */}
-                        <div className="bg-gradient-to-br from-indigo-600 to-purple-600 rounded-2xl p-8 border border-indigo-400 shadow-2xl">
+                        <div className="bg-linear-to-br from-indigo-600 to-purple-600 rounded-2xl p-8 border border-indigo-400 shadow-2xl">
                             <div className="inline-block bg-white/20 px-3 py-1 rounded-full text-sm font-semibold mb-4">
                                 Most Popular
                             </div>
@@ -474,15 +474,15 @@ export default function AboutUsPage() {
                             </p>
                             <ul className="space-y-3 mb-8">
                                 <li className="flex items-center space-x-3">
-                                    <Check className="w-5 h-5 text-green-300 flex-shrink-0" />
+                                    <Check className="w-5 h-5 text-green-300 shrink-0" />
                                     <span>Unlimited courses & students</span>
                                 </li>
                                 <li className="flex items-center space-x-3">
-                                    <Check className="w-5 h-5 text-green-300 flex-shrink-0" />
+                                    <Check className="w-5 h-5 text-green-300 shrink-0" />
                                     <span>Advanced marketing automation</span>
                                 </li>
                                 <li className="flex items-center space-x-3">
-                                    <Check className="w-5 h-5 text-green-300 flex-shrink-0" />
+                                    <Check className="w-5 h-5 text-green-300 shrink-0" />
                                     <span>Priority support & consultancy</span>
                                 </li>
                             </ul>

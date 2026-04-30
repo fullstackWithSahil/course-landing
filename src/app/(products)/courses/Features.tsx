@@ -1,12 +1,8 @@
 import {
     Award,
     BarChart3,
-    CheckCircle,
-    Clock,
-    FileText,
     Video,
 } from "lucide-react";
-import React from "react";
 
 export default function Features() {
     return (

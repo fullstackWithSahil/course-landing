@@ -40,7 +40,7 @@ export default function PartnerSection() {
                 {/* Three main pillars */}
                 <div className="grid md:grid-cols-3 gap-8 mb-16">
                     {/* Exceptional Support */}
-                    <div className="bg-gradient-to-br from-indigo-50 to-white p-8 rounded-2xl border border-indigo-100 hover:shadow-lg transition-shadow duration-300">
+                    <div className="bg-linear-to-br from-indigo-50 to-white p-8 rounded-2xl border border-indigo-100 hover:shadow-lg transition-shadow duration-300">
                         <div className="w-14 h-14 bg-indigo-600 rounded-xl flex items-center justify-center mb-6">
                             <Headphones className="w-7 h-7 text-white" />
                         </div>
@@ -69,7 +69,7 @@ export default function PartnerSection() {
                     </div>
 
                     {/* Free Consultancy */}
-                    <div className="bg-gradient-to-br from-purple-50 to-white p-8 rounded-2xl border border-purple-100 hover:shadow-lg transition-shadow duration-300">
+                    <div className="bg-linear-to-br from-purple-50 to-white p-8 rounded-2xl border border-purple-100 hover:shadow-lg transition-shadow duration-300">
                         <div className="w-14 h-14 bg-purple-600 rounded-xl flex items-center justify-center mb-6">
                             <Lightbulb className="w-7 h-7 text-white" />
                         </div>
@@ -97,7 +97,7 @@ export default function PartnerSection() {
                     </div>
 
                     {/* Partnership Approach */}
-                    <div className="bg-gradient-to-br from-teal-50 to-white p-8 rounded-2xl border border-teal-100 hover:shadow-lg transition-shadow duration-300">
+                    <div className="bg-linear-to-br from-teal-50 to-white p-8 rounded-2xl border border-teal-100 hover:shadow-lg transition-shadow duration-300">
                         <div className="w-14 h-14 bg-teal-600 rounded-xl flex items-center justify-center mb-6">
                             <Users className="w-7 h-7 text-white" />
                         </div>
@@ -126,8 +126,8 @@ export default function PartnerSection() {
                 </div>
 
                 {/* Stats/Social Proof Section */}
-                <div className="bg-gradient-to-r from-slate-900 to-slate-800 rounded-3xl p-12 text-white">
-                    <div className="grid md:grid-cols-2 gap-8 text-center text-center">
+                <div className="bg-linear-to-r from-slate-900 to-slate-800 rounded-3xl p-12 text-white">
+                    <div className="grid md:grid-cols-2 gap-8 text-center">
                         {/* <div className="space-y-2">
 							<div className="flex items-center justify-center mb-2">
 								<TrendingUp className="w-8 h-8 text-green-400" />
@@ -167,7 +167,7 @@ export default function PartnerSection() {
 							"This isn't just a platform—it's like having a co-founder who actually cares about your success."
 						</p>
 						<div className="flex items-center justify-center space-x-3">
-							<div className="w-12 h-12 bg-gradient-to-br from-indigo-400 to-purple-400 rounded-full"></div>
+							<div className="w-12 h-12 bg-linear-to-br from-indigo-400 to-purple-400 rounded-full"></div>
 							<div className="text-left">
 								<p className="font-semibold">Sarah Mitchell</p>
 								<p className="text-slate-400 text-sm">Course Creator, $250K+ Revenue</p>

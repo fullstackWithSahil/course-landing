@@ -24,7 +24,7 @@ export default function DigitalProductsPage() {
     return (
         <div className="min-h-screen bg-white">
             {/* Hero Section */}
-            <section className="relative py-24 px-6 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 overflow-hidden">
+            <section className="relative py-24 px-6 bg-linear-to-br from-slate-900 via-purple-900 to-slate-900 overflow-hidden">
                 <div className="absolute inset-0 opacity-20">
                     <div className="absolute top-20 left-10 w-96 h-96 bg-purple-500 rounded-full blur-3xl animate-pulse"></div>
                     <div className="absolute bottom-20 right-10 w-96 h-96 bg-pink-500 rounded-full blur-3xl animate-pulse"></div>
@@ -288,7 +288,7 @@ export default function DigitalProductsPage() {
 
                             <div className="space-y-6">
                                 <div className="flex items-start space-x-4">
-                                    <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center shrink-0">
                                         <Upload className="w-6 h-6 text-purple-600" />
                                     </div>
                                     <div>
@@ -304,7 +304,7 @@ export default function DigitalProductsPage() {
                                 </div>
 
                                 <div className="flex items-start space-x-4">
-                                    <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center shrink-0">
                                         <Globe className="w-6 h-6 text-pink-600" />
                                     </div>
                                     <div>
@@ -320,7 +320,7 @@ export default function DigitalProductsPage() {
                                 </div>
 
                                 <div className="flex items-start space-x-4">
-                                    <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center shrink-0">
                                         <Shield className="w-6 h-6 text-indigo-600" />
                                     </div>
                                     <div>
@@ -337,7 +337,7 @@ export default function DigitalProductsPage() {
                             </div>
                         </div>
 
-                        <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-8 aspect-square flex items-center justify-center">
+                        <div className="bg-linear-to-br from-slate-800 to-slate-900 rounded-2xl p-8 aspect-square flex items-center justify-center">
                             <p className="text-white/60 text-center">
                                 We are currently working on this product.
                             </p>
@@ -347,7 +347,7 @@ export default function DigitalProductsPage() {
             </section>
 
             {/* Pricing & Monetization */}
-            <section className="py-20 px-6 bg-gradient-to-br from-purple-600 via-pink-600 to-purple-700 text-white relative overflow-hidden">
+            <section className="py-20 px-6 bg-linear-to-br from-purple-600 via-pink-600 to-purple-700 text-white relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
                     <div className="absolute top-10 left-10 w-96 h-96 bg-white rounded-full blur-3xl"></div>
                     <div className="absolute bottom-10 right-10 w-96 h-96 bg-white rounded-full blur-3xl"></div>
@@ -444,7 +444,7 @@ export default function DigitalProductsPage() {
                     <div className="grid md:grid-cols-2 gap-12">
                         <div className="space-y-6">
                             <div className="flex items-start space-x-4">
-                                <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center shrink-0">
                                     <Zap className="w-6 h-6 text-purple-600" />
                                 </div>
                                 <div>
@@ -460,7 +460,7 @@ export default function DigitalProductsPage() {
                             </div>
 
                             <div className="flex items-start space-x-4">
-                                <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center shrink-0">
                                     <FileText className="w-6 h-6 text-pink-600" />
                                 </div>
                                 <div>
@@ -475,7 +475,7 @@ export default function DigitalProductsPage() {
                             </div>
 
                             <div className="flex items-start space-x-4">
-                                <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center shrink-0">
                                     <Award className="w-6 h-6 text-indigo-600" />
                                 </div>
                                 <div>
@@ -492,7 +492,7 @@ export default function DigitalProductsPage() {
 
                         <div className="space-y-6">
                             <div className="flex items-start space-x-4">
-                                <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center shrink-0">
                                     <RefreshCw className="w-6 h-6 text-teal-600" />
                                 </div>
                                 <div>
@@ -508,7 +508,7 @@ export default function DigitalProductsPage() {
                             </div>
 
                             <div className="flex items-start space-x-4">
-                                <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center shrink-0">
                                     <Download className="w-6 h-6 text-orange-600" />
                                 </div>
                                 <div>
@@ -523,7 +523,7 @@ export default function DigitalProductsPage() {
                             </div>
 
                             <div className="flex items-start space-x-4">
-                                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center shrink-0">
                                     <Shield className="w-6 h-6 text-blue-600" />
                                 </div>
                                 <div>
@@ -598,7 +598,7 @@ export default function DigitalProductsPage() {
             </section>
 
             {/* CTA Section */}
-            <section className="py-20 px-6 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white">
+            <section className="py-20 px-6 bg-linear-to-br from-slate-900 via-purple-900 to-slate-900 text-white">
                 <div className="max-w-5xl mx-auto">
                     <div className="text-center mb-12">
                         <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -627,19 +627,19 @@ export default function DigitalProductsPage() {
                             </p>
                             <ul className="space-y-3 mb-8">
                                 <li className="flex items-center space-x-3">
-                                    <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0" />
+                                    <CheckCircle className="w-5 h-5 text-green-400 shrink-0" />
                                     <span>Unlimited products</span>
                                 </li>
                                 <li className="flex items-center space-x-3">
-                                    <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0" />
+                                    <CheckCircle className="w-5 h-5 text-green-400 shrink-0" />
                                     <span>Secure file hosting</span>
                                 </li>
                                 <li className="flex items-center space-x-3">
-                                    <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0" />
+                                    <CheckCircle className="w-5 h-5 text-green-400 shrink-0" />
                                     <span>Instant delivery system</span>
                                 </li>
                                 <li className="flex items-center space-x-3">
-                                    <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0" />
+                                    <CheckCircle className="w-5 h-5 text-green-400 shrink-0" />
                                     <span>Free consultancy & support</span>
                                 </li>
                             </ul>
@@ -649,7 +649,7 @@ export default function DigitalProductsPage() {
                         </div>
 
                         {/* Pro Plan */}
-                        <div className="bg-gradient-to-br from-purple-600 to-pink-600 rounded-2xl p-8 border border-purple-400 shadow-2xl">
+                        <div className="bg-linear-to-br from-purple-600 to-pink-600 rounded-2xl p-8 border border-purple-400 shadow-2xl">
                             <div className="inline-block bg-white/20 px-3 py-1 rounded-full text-sm font-semibold mb-4">
                                 For Power Sellers
                             </div>
@@ -667,19 +667,19 @@ export default function DigitalProductsPage() {
                             </p>
                             <ul className="space-y-3 mb-8">
                                 <li className="flex items-center space-x-3">
-                                    <CheckCircle className="w-5 h-5 text-green-300 flex-shrink-0" />
+                                    <CheckCircle className="w-5 h-5 text-green-300 shrink-0" />
                                     <span>Everything in Free, plus:</span>
                                 </li>
                                 <li className="flex items-center space-x-3">
-                                    <CheckCircle className="w-5 h-5 text-green-300 flex-shrink-0" />
+                                    <CheckCircle className="w-5 h-5 text-green-300 shrink-0" />
                                     <span>Advanced analytics dashboard</span>
                                 </li>
                                 <li className="flex items-center space-x-3">
-                                    <CheckCircle className="w-5 h-5 text-green-300 flex-shrink-0" />
+                                    <CheckCircle className="w-5 h-5 text-green-300 shrink-0" />
                                     <span>Affiliate program management</span>
                                 </li>
                                 <li className="flex items-center space-x-3">
-                                    <CheckCircle className="w-5 h-5 text-green-300 flex-shrink-0" />
+                                    <CheckCircle className="w-5 h-5 text-green-300 shrink-0" />
                                     <span>Priority support</span>
                                 </li>
                             </ul>

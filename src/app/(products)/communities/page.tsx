@@ -22,7 +22,7 @@ export default function CommunitiesPage() {
     return (
         <div className="min-h-screen bg-white">
             {/* Hero Section */}
-            <section className="relative py-24 px-6 bg-gradient-to-br from-slate-900 via-teal-900 to-slate-900 overflow-hidden">
+            <section className="relative py-24 px-6 bg-linear-to-br from-slate-900 via-teal-900 to-slate-900 overflow-hidden">
                 <div className="absolute inset-0 opacity-20">
                     <div className="absolute top-20 left-10 w-96 h-96 bg-teal-500 rounded-full blur-3xl animate-pulse"></div>
                     <div className="absolute bottom-20 right-10 w-96 h-96 bg-cyan-500 rounded-full blur-3xl animate-pulse"></div>
@@ -112,7 +112,7 @@ export default function CommunitiesPage() {
             {/* Community Platform Preview */}
             <section className="py-16 px-6 bg-slate-50">
                 <div className="max-w-6xl mx-auto">
-                    <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-8 flex items-center justify-center aspect-video">
+                    <div className="bg-linear-to-br from-slate-800 to-slate-900 rounded-2xl p-8 flex items-center justify-center aspect-video">
                         <img
                             src={
                                 "https://assets.buisnesstools.in/blog/kajabi-vs-buisnesstools/chat-ui.png"
@@ -233,7 +233,7 @@ export default function CommunitiesPage() {
 
                             <div className="space-y-6">
                                 <div className="flex items-start space-x-4">
-                                    <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center shrink-0">
                                         <Zap className="w-6 h-6 text-teal-600" />
                                     </div>
                                     <div>
@@ -249,7 +249,7 @@ export default function CommunitiesPage() {
                                 </div>
 
                                 <div className="flex items-start space-x-4">
-                                    <div className="w-12 h-12 bg-cyan-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <div className="w-12 h-12 bg-cyan-100 rounded-lg flex items-center justify-center shrink-0">
                                         <Lock className="w-6 h-6 text-cyan-600" />
                                     </div>
                                     <div>
@@ -265,7 +265,7 @@ export default function CommunitiesPage() {
                                 </div>
 
                                 <div className="flex items-start space-x-4">
-                                    <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center shrink-0">
                                         <Crown className="w-6 h-6 text-indigo-600" />
                                     </div>
                                     <div>
@@ -288,7 +288,7 @@ export default function CommunitiesPage() {
             </section>
 
             {/* Engagement Features */}
-            <section className="py-20 px-6 bg-gradient-to-br from-teal-600 via-cyan-600 to-teal-700 text-white relative overflow-hidden">
+            <section className="py-20 px-6 bg-linear-to-br from-teal-600 via-cyan-600 to-teal-700 text-white relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
                     <div className="absolute top-10 left-10 w-96 h-96 bg-white rounded-full blur-3xl"></div>
                     <div className="absolute bottom-10 right-10 w-96 h-96 bg-white rounded-full blur-3xl"></div>
@@ -425,7 +425,7 @@ export default function CommunitiesPage() {
             </section>
 
             {/* CTA Section */}
-            <section className="py-20 px-6 bg-gradient-to-br from-slate-900 via-teal-900 to-slate-900 text-white">
+            <section className="py-20 px-6 bg-linear-to-br from-slate-900 via-teal-900 to-slate-900 text-white">
                 <div className="max-w-5xl mx-auto">
                     <div className="text-center mb-12">
                         <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -466,7 +466,7 @@ export default function CommunitiesPage() {
                     <div className="space-y-8">
                         <div className="bg-slate-50 rounded-xl p-8 border border-slate-200">
                             <div className="flex items-start space-x-4">
-                                <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center shrink-0">
                                     <TrendingUp className="w-6 h-6 text-teal-600" />
                                 </div>
                                 <div>
@@ -485,7 +485,7 @@ export default function CommunitiesPage() {
 
                         <div className="bg-slate-50 rounded-xl p-8 border border-slate-200">
                             <div className="flex items-start space-x-4">
-                                <div className="w-12 h-12 bg-cyan-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <div className="w-12 h-12 bg-cyan-100 rounded-lg flex items-center justify-center shrink-0">
                                     <Sparkles className="w-6 h-6 text-cyan-600" />
                                 </div>
                                 <div>
@@ -505,7 +505,7 @@ export default function CommunitiesPage() {
 
                         <div className="bg-slate-50 rounded-xl p-8 border border-slate-200">
                             <div className="flex items-start space-x-4">
-                                <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center shrink-0">
                                     <Zap className="w-6 h-6 text-indigo-600" />
                                 </div>
                                 <div>
@@ -524,7 +524,7 @@ export default function CommunitiesPage() {
 
                         <div className="bg-slate-50 rounded-xl p-8 border border-slate-200">
                             <div className="flex items-start space-x-4">
-                                <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center shrink-0">
                                     <Shield className="w-6 h-6 text-purple-600" />
                                 </div>
                                 <div>

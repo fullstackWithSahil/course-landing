@@ -1,11 +1,10 @@
 "use client";
-import { ArrowRight, Play, CheckCircle2, Sparkles } from "lucide-react";
-import Herostats from "./Herostats";
+import { ArrowRight, CheckCircle2, Sparkles } from "lucide-react";
 import Link from "next/link";
 
 export default function Hero() {
   return (
-    <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-indigo-50 via-white to-purple-50">
+    <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-linear-to-br from-indigo-50 via-white to-purple-50">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 left-10 w-72 h-72 bg-indigo-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
@@ -26,7 +25,7 @@ export default function Hero() {
             {/* Main headline */}
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-slate-900 leading-tight">
               Launch Your{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600">
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-indigo-600 to-purple-600">
                 Online Course
               </span>{" "}
               Without Touching Tech
@@ -41,19 +40,19 @@ export default function Hero() {
             {/* Benefits list */}
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
-                <CheckCircle2 className="w-6 h-6 text-green-500 flex-shrink-0" />
+                <CheckCircle2 className="w-6 h-6 text-green-500 shrink-0" />
                 <span className="text-lg text-slate-700">
                   We build your entire course website for you
                 </span>
               </div>
               <div className="flex items-center space-x-3">
-                <CheckCircle2 className="w-6 h-6 text-green-500 flex-shrink-0" />
+                <CheckCircle2 className="w-6 h-6 text-green-500 shrink-0" />
                 <span className="text-lg text-slate-700">
                   Free strategy consultancy included
                 </span>
               </div>
               <div className="flex items-center space-x-3">
-                <CheckCircle2 className="w-6 h-6 text-green-500 flex-shrink-0" />
+                <CheckCircle2 className="w-6 h-6 text-green-500 shrink-0" />
                 <span className="text-lg text-slate-700">
                   No technical skills required—ever
                 </span>
@@ -90,7 +89,7 @@ export default function Hero() {
                   <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
                   <div className="w-3 h-3 rounded-full bg-green-400"></div>
                 </div>
-                <div className="bg-gradient-to-br from-indigo-100 to-purple-100 rounded-lg p-6 mb-4">
+                <div className="bg-linear-to-br from-indigo-100 to-purple-100 rounded-lg p-6 mb-4">
                   <div className="flex items-center justify-between mb-4">
                     <div className="h-8 w-32 bg-white/60 rounded"></div>
                     <div className="h-8 w-20 bg-white/60 rounded"></div>
@@ -102,15 +101,15 @@ export default function Hero() {
                   </div>
                 </div>
                 <div className="grid grid-cols-3 gap-3">
-                  <div className="h-20 bg-gradient-to-br from-indigo-400 to-indigo-500 rounded-lg flex items-center justify-center text-white font-bold text-2xl">
+                  <div className="h-20 bg-linear-to-br from-indigo-400 to-indigo-500 rounded-lg flex items-center justify-center text-white font-bold text-2xl">
                     348
                     <span className="text-xs ml-1">students</span>
                   </div>
-                  <div className="h-20 bg-gradient-to-br from-purple-400 to-purple-500 rounded-lg flex items-center justify-center text-white font-bold text-2xl">
+                  <div className="h-20 bg-linear-to-br from-purple-400 to-purple-500 rounded-lg flex items-center justify-center text-white font-bold text-2xl">
                     12
                     <span className="text-xs ml-1">courses</span>
                   </div>
-                  <div className="h-20 bg-gradient-to-br from-pink-400 to-pink-500 rounded-lg flex items-center justify-center text-white font-bold text-2xl">
+                  <div className="h-20 bg-linear-to-br from-pink-400 to-pink-500 rounded-lg flex items-center justify-center text-white font-bold text-2xl">
                     $24K
                   </div>
                 </div>

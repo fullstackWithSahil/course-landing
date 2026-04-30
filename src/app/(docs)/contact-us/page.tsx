@@ -2,7 +2,7 @@ import Form from "./Form";
 
 export default function Page() {
     return (
-        <div className="max-w-[1200px] mx-auto px-4 py-8">
+        <div className="max-w-300 mx-auto px-4 py-8">
             <div className="bg-gray-50 rounded-lg shadow-md overflow-hidden">
                 <div className="bg-blue-600 p-6 text-white">
                     <h1 className="text-3xl font-bold text-center">

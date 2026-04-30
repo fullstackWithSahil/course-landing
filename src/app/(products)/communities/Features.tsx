@@ -37,7 +37,7 @@ export default function Features() {
 						</div> */}
 
                         <div className="flex items-start space-x-4">
-                            <div className="w-12 h-12 bg-cyan-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <div className="w-12 h-12 bg-cyan-100 rounded-lg flex items-center justify-center shrink-0">
                                 <FileText className="w-6 h-6 text-cyan-600" />
                             </div>
                             <div>
@@ -52,7 +52,7 @@ export default function Features() {
                         </div>
 
                         <div className="flex items-start space-x-4">
-                            <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center shrink-0">
                                 <Users className="w-6 h-6 text-indigo-600" />
                             </div>
                             <div>
@@ -69,7 +69,7 @@ export default function Features() {
 
                     <div className="space-y-6">
                         <div className="flex items-start space-x-4">
-                            <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center shrink-0">
                                 <Target className="w-6 h-6 text-purple-600" />
                             </div>
                             <div>
@@ -84,7 +84,7 @@ export default function Features() {
                         </div>
 
                         <div className="flex items-start space-x-4">
-                            <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center shrink-0">
                                 <MessageCircle className="w-6 h-6 text-pink-600" />
                             </div>
                             <div>

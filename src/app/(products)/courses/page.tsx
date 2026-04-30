@@ -1,15 +1,11 @@
 import {
     Users,
     Play,
-    Award,
     BarChart3,
     Zap,
-    Clock,
-    Video,
     CheckCircle,
     Target,
     TrendingUp,
-    FileText,
     Calendar,
     ArrowRight,
     Star,
@@ -25,7 +21,7 @@ export default function CoursesPage() {
     return (
         <div className="min-h-screen bg-white">
             {/* Hero Section */}
-            <section className="relative py-24 px-6 bg-gradient-to-br from-slate-900 via-indigo-900 to-slate-900 overflow-hidden">
+            <section className="relative py-24 px-6 bg-linear-to-br from-slate-900 via-indigo-900 to-slate-900 overflow-hidden">
                 <div className="absolute inset-0 opacity-20">
                     <div className="absolute top-20 left-10 w-96 h-96 bg-indigo-500 rounded-full blur-3xl animate-pulse"></div>
                     <div className="absolute bottom-20 right-10 w-96 h-96 bg-purple-500 rounded-full blur-3xl animate-pulse"></div>
@@ -109,7 +105,7 @@ export default function CoursesPage() {
 
                             <div className="space-y-6">
                                 <div className="flex items-start space-x-4">
-                                    <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center shrink-0">
                                         <Zap className="w-6 h-6 text-indigo-600" />
                                     </div>
                                     <div>
@@ -125,7 +121,7 @@ export default function CoursesPage() {
                                 </div>
 
                                 <div className="flex items-start space-x-4">
-                                    <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center shrink-0">
                                         <Code className="w-6 h-6 text-purple-600" />
                                     </div>
                                     <div>
@@ -141,7 +137,7 @@ export default function CoursesPage() {
                                 </div>
 
                                 <div className="flex items-start space-x-4">
-                                    <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center shrink-0">
                                         <Shield className="w-6 h-6 text-teal-600" />
                                     </div>
                                     <div>
@@ -168,7 +164,7 @@ export default function CoursesPage() {
             </section>
 
             {/* Student Experience */}
-            <section className="py-20 px-6 bg-gradient-to-br from-indigo-600 via-purple-600 to-indigo-700 text-white relative overflow-hidden">
+            <section className="py-20 px-6 bg-linear-to-br from-indigo-600 via-purple-600 to-indigo-700 text-white relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
                     <div className="absolute top-10 left-10 w-96 h-96 bg-white rounded-full blur-3xl"></div>
                     <div className="absolute bottom-10 right-10 w-96 h-96 bg-white rounded-full blur-3xl"></div>
@@ -319,7 +315,7 @@ export default function CoursesPage() {
                     <div className="grid md:grid-cols-2 gap-12">
                         <div className="space-y-6">
                             <div className="flex items-start space-x-4">
-                                <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center shrink-0">
                                     <Users className="w-6 h-6 text-indigo-600" />
                                 </div>
                                 <div>
@@ -334,7 +330,7 @@ export default function CoursesPage() {
                             </div>
 
                             <div className="flex items-start space-x-4">
-                                <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center shrink-0">
                                     <TrendingUp className="w-6 h-6 text-purple-600" />
                                 </div>
                                 <div>
@@ -363,7 +359,7 @@ export default function CoursesPage() {
 
                         <div className="space-y-6">
                             <div className="flex items-start space-x-4">
-                                <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center shrink-0">
                                     <BarChart3 className="w-6 h-6 text-pink-600" />
                                 </div>
                                 <div>
@@ -390,7 +386,7 @@ export default function CoursesPage() {
 							</div> */}
 
                             <div className="flex items-start space-x-4">
-                                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center shrink-0">
                                     <Target className="w-6 h-6 text-blue-600" />
                                 </div>
                                 <div>
@@ -411,7 +407,7 @@ export default function CoursesPage() {
             </section>
 
             {/* CTA Section */}
-            <section className="py-20 px-6 bg-gradient-to-br from-slate-900 via-indigo-900 to-slate-900 text-white">
+            <section className="py-20 px-6 bg-linear-to-br from-slate-900 via-indigo-900 to-slate-900 text-white">
                 <div className="max-w-5xl mx-auto">
                     <div className="text-center mb-12">
                         <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -439,19 +435,19 @@ export default function CoursesPage() {
                             </p>
                             <ul className="space-y-3 mb-8">
                                 <li className="flex items-center space-x-3">
-                                    <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0" />
+                                    <CheckCircle className="w-5 h-5 text-green-400 shrink-0" />
                                     <span>Unlimited courses & students</span>
                                 </li>
                                 <li className="flex items-center space-x-3">
-                                    <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0" />
+                                    <CheckCircle className="w-5 h-5 text-green-400 shrink-0" />
                                     <span>All core features included</span>
                                 </li>
                                 <li className="flex items-center space-x-3">
-                                    <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0" />
+                                    <CheckCircle className="w-5 h-5 text-green-400 shrink-0" />
                                     <span>Free consultancy & support</span>
                                 </li>
                                 <li className="flex items-center space-x-3">
-                                    <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0" />
+                                    <CheckCircle className="w-5 h-5 text-green-400 shrink-0" />
                                     <span>Custom branded website</span>
                                 </li>
                             </ul>
@@ -464,7 +460,7 @@ export default function CoursesPage() {
                         </div>
 
                         {/* Pro Plan */}
-                        <div className="bg-gradient-to-br from-indigo-600 to-purple-600 rounded-2xl p-8 border border-indigo-400 shadow-2xl">
+                        <div className="bg-linear-to-br from-indigo-600 to-purple-600 rounded-2xl p-8 border border-indigo-400 shadow-2xl">
                             <div className="inline-block bg-white/20 px-3 py-1 rounded-full text-sm font-semibold mb-4">
                                 For Scaling Creators
                             </div>
@@ -482,19 +478,19 @@ export default function CoursesPage() {
                             </p>
                             <ul className="space-y-3 mb-8">
                                 <li className="flex items-center space-x-3">
-                                    <CheckCircle className="w-5 h-5 text-green-300 flex-shrink-0" />
+                                    <CheckCircle className="w-5 h-5 text-green-300 shrink-0" />
                                     <span>Everything in Free, plus:</span>
                                 </li>
                                 <li className="flex items-center space-x-3">
-                                    <CheckCircle className="w-5 h-5 text-green-300 flex-shrink-0" />
+                                    <CheckCircle className="w-5 h-5 text-green-300 shrink-0" />
                                     <span>Advanced marketing automation</span>
                                 </li>
                                 <li className="flex items-center space-x-3">
-                                    <CheckCircle className="w-5 h-5 text-green-300 flex-shrink-0" />
+                                    <CheckCircle className="w-5 h-5 text-green-300 shrink-0" />
                                     <span>White-label options</span>
                                 </li>
                                 <li className="flex items-center space-x-3">
-                                    <CheckCircle className="w-5 h-5 text-green-300 flex-shrink-0" />
+                                    <CheckCircle className="w-5 h-5 text-green-300 shrink-0" />
                                     <span>Priority support</span>
                                 </li>
                             </ul>
