@@ -346,89 +346,6 @@ export default function DigitalProductsPage() {
                 </div>
             </section>
 
-            {/* Pricing & Monetization */}
-            <section className="py-20 px-6 bg-linear-to-br from-purple-600 via-pink-600 to-purple-700 text-white relative overflow-hidden">
-                <div className="absolute inset-0 opacity-10">
-                    <div className="absolute top-10 left-10 w-96 h-96 bg-white rounded-full blur-3xl"></div>
-                    <div className="absolute bottom-10 right-10 w-96 h-96 bg-white rounded-full blur-3xl"></div>
-                </div>
-
-                <div className="max-w-6xl mx-auto relative z-10">
-                    <div className="text-center mb-16">
-                        <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                            Flexible Pricing Options
-                        </h2>
-                        <p className="text-xl text-purple-100 leading-relaxed">
-                            Sell your way with powerful monetization features
-                        </p>
-                    </div>
-
-                    <div className="grid md:grid-cols-3 gap-8 mb-12">
-                        <div className="text-center">
-                            <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto mb-4">
-                                <DollarSign className="w-8 h-8 text-white" />
-                            </div>
-                            <h3 className="text-xl font-bold mb-3">
-                                One-Time Purchases
-                            </h3>
-                            <p className="text-purple-100">
-                                Sell products with lifetime access at a single
-                                price point
-                            </p>
-                        </div>
-                        <div className="text-center">
-                            <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto mb-4">
-                                <Layers className="w-8 h-8 text-white" />
-                            </div>
-                            <h3 className="text-xl font-bold mb-3">
-                                Tiered Pricing
-                            </h3>
-                            <p className="text-purple-100">
-                                Offer basic, standard, and premium versions of
-                                your products
-                            </p>
-                        </div>
-                        <div className="text-center">
-                            <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto mb-4">
-                                <Package className="w-8 h-8 text-white" />
-                            </div>
-                            <h3 className="text-xl font-bold mb-3">
-                                Bundle Deals
-                            </h3>
-                            <p className="text-purple-100">
-                                Package multiple products together at discounted
-                                rates
-                            </p>
-                        </div>
-                    </div>
-
-                    <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-white/20">
-                        <div className="grid md:grid-cols-2 gap-8">
-                            <div>
-                                <h3 className="text-2xl font-bold mb-4">
-                                    Dynamic Discounting
-                                </h3>
-                                <p className="text-purple-100 leading-relaxed">
-                                    Create coupon codes, limited-time offers,
-                                    and promotional campaigns. Drive urgency and
-                                    boost sales with smart pricing strategies.
-                                </p>
-                            </div>
-                            <div>
-                                <h3 className="text-2xl font-bold mb-4">
-                                    Pay What You Want
-                                </h3>
-                                <p className="text-purple-100 leading-relaxed">
-                                    Let customers choose their price with
-                                    minimum thresholds. Perfect for launching
-                                    new products or building goodwill.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
             {/* Customer Experience */}
             <section className="py-20 px-6 bg-white">
                 <div className="max-w-6xl mx-auto">
@@ -610,90 +527,17 @@ export default function DigitalProductsPage() {
                         </p>
                     </div>
 
-                    <div className="grid md:grid-cols-2 gap-8 mb-12">
-                        {/* Free Plan */}
-                        <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-                            <h3 className="text-2xl font-bold mb-4">
-                                Start Free
-                            </h3>
-                            <div className="mb-6">
-                                <span className="text-4xl font-bold">
-                                    Pay as you go
-                                </span>
-                            </div>
-                            <p className="text-slate-300 mb-6 leading-relaxed">
-                                Launch your digital product store without
-                                upfront costs.
-                            </p>
-                            <ul className="space-y-3 mb-8">
-                                <li className="flex items-center space-x-3">
-                                    <CheckCircle className="w-5 h-5 text-green-400 shrink-0" />
-                                    <span>Unlimited products</span>
-                                </li>
-                                <li className="flex items-center space-x-3">
-                                    <CheckCircle className="w-5 h-5 text-green-400 shrink-0" />
-                                    <span>Secure file hosting</span>
-                                </li>
-                                <li className="flex items-center space-x-3">
-                                    <CheckCircle className="w-5 h-5 text-green-400 shrink-0" />
-                                    <span>Instant delivery system</span>
-                                </li>
-                                <li className="flex items-center space-x-3">
-                                    <CheckCircle className="w-5 h-5 text-green-400 shrink-0" />
-                                    <span>Free consultancy & support</span>
-                                </li>
-                            </ul>
-                            <button className="w-full bg-white hover:bg-slate-100 text-slate-900 font-bold py-4 px-6 rounded-lg transition-all duration-200">
-                                Start Selling Free
-                            </button>
-                        </div>
-
-                        {/* Pro Plan */}
-                        <div className="bg-linear-to-br from-purple-600 to-pink-600 rounded-2xl p-8 border border-purple-400 shadow-2xl">
-                            <div className="inline-block bg-white/20 px-3 py-1 rounded-full text-sm font-semibold mb-4">
-                                For Power Sellers
-                            </div>
-                            <h3 className="text-2xl font-bold mb-4">
-                                Pro Plans
-                            </h3>
-                            <div className="mb-6">
-                                <span className="text-4xl font-bold">
-                                    Custom
-                                </span>
-                            </div>
-                            <p className="text-purple-100 mb-6 leading-relaxed">
-                                Advanced features for high-volume digital
-                                product sellers.
-                            </p>
-                            <ul className="space-y-3 mb-8">
-                                <li className="flex items-center space-x-3">
-                                    <CheckCircle className="w-5 h-5 text-green-300 shrink-0" />
-                                    <span>Everything in Free, plus:</span>
-                                </li>
-                                <li className="flex items-center space-x-3">
-                                    <CheckCircle className="w-5 h-5 text-green-300 shrink-0" />
-                                    <span>Advanced analytics dashboard</span>
-                                </li>
-                                <li className="flex items-center space-x-3">
-                                    <CheckCircle className="w-5 h-5 text-green-300 shrink-0" />
-                                    <span>Affiliate program management</span>
-                                </li>
-                                <li className="flex items-center space-x-3">
-                                    <CheckCircle className="w-5 h-5 text-green-300 shrink-0" />
-                                    <span>Priority support</span>
-                                </li>
-                            </ul>
-                            <button className="w-full bg-white hover:bg-slate-100 text-purple-600 font-bold py-4 px-6 rounded-lg transition-all duration-200">
-                                View Pro Features
-                            </button>
-                        </div>
-                    </div>
-
                     <div className="text-center">
                         <p className="text-xl text-slate-300 mb-6">
                             Questions about selling digital products?
                         </p>
-                        <button className="bg-transparent hover:bg-white/10 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-200 border-2 border-white/30"></button>
+                        <a
+                            href="https://cal.com/buisnesstools/consultancy"
+                            className="bg-transparent hover:bg-white/10 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-200 border-2 border-white/30 hover:border-white/50 inline-flex items-center"
+                        >
+                            <Calendar className="w-5 h-5 mr-2" />
+                            Book a Free Consultation
+                        </a>
                     </div>
                 </div>
             </section>

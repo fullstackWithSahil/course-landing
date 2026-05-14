@@ -1,14 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
-import { Toaster } from "@/components/ui/sonner";
-import { ClerkProvider } from "@clerk/nextjs";
 import PublicNavbar from "@/components/landingPage/PublicNavbar";
 import Footer from "@/components/landingPage/Footer";
-import { Suspense } from "react";
-import PostHogPageView from "@/components/PostHogPageView";
 import { cn } from "@/lib/utils";
-import { PostHogProvider } from "./providers";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -34,22 +29,14 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <ClerkProvider>
             <html lang="en" className={cn("font-sans", inter.variable)}>
-                <PostHogProvider>
                     <body
                         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
                     >
                         <PublicNavbar />
-                        <Suspense>
-                            <PostHogPageView />
-                        </Suspense>
                         {children}
-                        <Toaster />
                         <Footer />
                     </body>
-                </PostHogProvider>
             </html>
-        </ClerkProvider>
     );
 }

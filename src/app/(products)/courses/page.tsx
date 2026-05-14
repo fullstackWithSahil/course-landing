@@ -3,7 +3,6 @@ import {
     Play,
     BarChart3,
     Zap,
-    CheckCircle,
     Target,
     TrendingUp,
     Calendar,
@@ -13,7 +12,6 @@ import {
     Code,
     Shield,
 } from "lucide-react";
-import Link from "next/link";
 import Features from "./Features";
 import { Badge } from "@/components/ui/badge";
 
@@ -417,90 +415,6 @@ export default function CoursesPage() {
                             Join thousands of creators who trust BusinessTools
                             to deliver exceptional learning experiences
                         </p>
-                    </div>
-
-                    <div className="grid md:grid-cols-2 gap-8 mb-12">
-                        {/* Free Plan */}
-                        <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-                            <h3 className="text-2xl font-bold mb-4">
-                                Start Free
-                            </h3>
-                            <div className="mb-6">
-                                <span className="text-4xl font-bold">
-                                    Pay as you go
-                                </span>
-                            </div>
-                            <p className="text-slate-300 mb-6 leading-relaxed">
-                                No upfront costs. We only succeed when you do.
-                            </p>
-                            <ul className="space-y-3 mb-8">
-                                <li className="flex items-center space-x-3">
-                                    <CheckCircle className="w-5 h-5 text-green-400 shrink-0" />
-                                    <span>Unlimited courses & students</span>
-                                </li>
-                                <li className="flex items-center space-x-3">
-                                    <CheckCircle className="w-5 h-5 text-green-400 shrink-0" />
-                                    <span>All core features included</span>
-                                </li>
-                                <li className="flex items-center space-x-3">
-                                    <CheckCircle className="w-5 h-5 text-green-400 shrink-0" />
-                                    <span>Free consultancy & support</span>
-                                </li>
-                                <li className="flex items-center space-x-3">
-                                    <CheckCircle className="w-5 h-5 text-green-400 shrink-0" />
-                                    <span>Custom branded website</span>
-                                </li>
-                            </ul>
-                            <a
-                                href={"https://app.buisnesstools.in/onboarding"}
-                                className="w-full bg-white hover:bg-slate-100 text-slate-900 font-bold py-4 px-6 rounded-lg transition-all duration-200"
-                            >
-                                Start Creating Free
-                            </a>
-                        </div>
-
-                        {/* Pro Plan */}
-                        <div className="bg-linear-to-br from-indigo-600 to-purple-600 rounded-2xl p-8 border border-indigo-400 shadow-2xl">
-                            <div className="inline-block bg-white/20 px-3 py-1 rounded-full text-sm font-semibold mb-4">
-                                For Scaling Creators
-                            </div>
-                            <h3 className="text-2xl font-bold mb-4">
-                                Pro Plans
-                            </h3>
-                            <div className="mb-6">
-                                <span className="text-4xl font-bold">
-                                    Custom
-                                </span>
-                            </div>
-                            <p className="text-indigo-100 mb-6 leading-relaxed">
-                                Advanced features for established course
-                                creators ready to scale.
-                            </p>
-                            <ul className="space-y-3 mb-8">
-                                <li className="flex items-center space-x-3">
-                                    <CheckCircle className="w-5 h-5 text-green-300 shrink-0" />
-                                    <span>Everything in Free, plus:</span>
-                                </li>
-                                <li className="flex items-center space-x-3">
-                                    <CheckCircle className="w-5 h-5 text-green-300 shrink-0" />
-                                    <span>Advanced marketing automation</span>
-                                </li>
-                                <li className="flex items-center space-x-3">
-                                    <CheckCircle className="w-5 h-5 text-green-300 shrink-0" />
-                                    <span>White-label options</span>
-                                </li>
-                                <li className="flex items-center space-x-3">
-                                    <CheckCircle className="w-5 h-5 text-green-300 shrink-0" />
-                                    <span>Priority support</span>
-                                </li>
-                            </ul>
-                            <Link
-                                href={"/pricing"}
-                                className="w-full bg-white hover:bg-slate-100 text-indigo-600 font-bold py-4 px-6 rounded-lg transition-all duration-200"
-                            >
-                                View Pro Features
-                            </Link>
-                        </div>
                     </div>
 
                     <div className="text-center">

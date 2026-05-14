@@ -45,7 +45,7 @@ export default function Leadmagnet() {
     return (
         <div
             id="consultancy"
-            className="bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-700 py-16 px-6 relative overflow-hidden"
+            className="bg-linear-to-br from-blue-600 via-blue-700 to-indigo-700 py-16 px-6 relative overflow-hidden"
         >
             {/* Background decorative elements */}
             <div className="absolute inset-0 opacity-10">

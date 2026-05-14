@@ -16,7 +16,6 @@ import {
 import Tiers from "./Tiers";
 import Features from "./Features";
 import Link from "next/link";
-import Pricing from "./Pricing";
 
 export default function CommunitiesPage() {
     return (
@@ -43,7 +42,7 @@ export default function CommunitiesPage() {
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link
-                            href={"https://communities.buisnesstools.in/"}
+                            href={"https://app.buisnesstools.in/onboarding"}
                             className="bg-white hover:bg-slate-100 text-slate-900 font-bold py-4 px-8 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl inline-flex items-center justify-center"
                         >
                             Start Building Community
@@ -437,7 +436,7 @@ export default function CommunitiesPage() {
                         </p>
                     </div>
 
-                    <Pricing />
+                    {/* <Pricing /> */}
 
                     <div className="text-center">
                         <p className="text-xl text-slate-300 mb-6">
@@ -555,10 +554,12 @@ export default function CommunitiesPage() {
                         Create a community platform that you own, control, and
                         monetize—starting today.
                     </p>
-                    <button className="group bg-teal-600 hover:bg-teal-700 text-white font-bold py-4 px-10 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl inline-flex items-center">
-                        Launch Your Community
-                        <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-200" />
-                    </button>
+                    <a href="https://app.buisnesstools.in/onboarding">
+                        <button className="group bg-teal-600 hover:bg-teal-700 text-white font-bold py-4 px-10 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl inline-flex items-center">
+                            Launch Your Community
+                            <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-200" />
+                        </button>
+                    </a>
                 </div>
             </section>
         </div>

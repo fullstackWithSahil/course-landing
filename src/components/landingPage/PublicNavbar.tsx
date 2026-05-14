@@ -1,5 +1,4 @@
 "use client";
-import { Show, UserButton } from "@clerk/nextjs";
 import {
   Accordion,
   AccordionContent,
@@ -77,26 +76,12 @@ export default function PublicNavbar() {
             </NavigationMenu>
           </div>
           <div className="flex items-center">
-            <Show when={"signed-out"}>
               <span className="hidden md:block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition mx-1">
                 <a href="https://accounts.buisnesstools.in/sign-in">Sign In</a>
               </span>
               <span className="hidden md:block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition mx-1">
                 <a href="https://accounts.buisnesstools.in/sign-up">Sign Up</a>
               </span>
-            </Show>
-
-            <Show when={"signed-in"}>
-              <div className="hidden md:flex items-center gap-2 mr-3">
-                <a href="https://app.buisnesstools.in/onboarding">
-                  <Badge>
-                    Dashboard
-                    <Triangle className="rotate-90 fill-white" />
-                  </Badge>
-                </a>
-                <UserButton />
-              </div>
-            </Show>
           </div>
         </div>
       </nav>
@@ -126,20 +111,9 @@ export default function PublicNavbar() {
               ))}
             </Accordion>
             <div className="flex items-center justify-between">
-              <Show when={"signed-out"}>
                 <button className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">
                   <a href="https://accounts.buisnesstools.in/sign-in">Sign In</a>
                 </button>
-              </Show>
-              <Show when={"signed-in"}>
-                <UserButton />
-              </Show>
-              <a href="https://app.buisnesstools.in/onboarding">
-                <Badge>
-                  Dashboard
-                  <Triangle className="rotate-90 fill-white" />
-                </Badge>
-              </a>
             </div>
           </div>
         </div>

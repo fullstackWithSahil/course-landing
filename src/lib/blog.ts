@@ -13,9 +13,9 @@ export interface BlogPost {
     [key: string]: any;
 }
 
-const postsDirectory = path.join(process.cwd(), "src/content/blog");
 
-export async function getAllPosts(): Promise<BlogPost[]> {
+export async function getAllPosts(folder: string): Promise<BlogPost[]> {
+    const postsDirectory = path.join(process.cwd(), `src/content/${folder}`);
     const fileNames = fs.readdirSync(postsDirectory);
     const allPostsData = await Promise.all(
         fileNames
@@ -46,8 +46,9 @@ export async function getAllPosts(): Promise<BlogPost[]> {
     return allPostsData.sort((a, b) => (a.date < b.date ? 1 : -1));
 }
 
-export async function getPostBySlug(slug: string): Promise<BlogPost | null> {
+export async function getPostBySlug(slug: string, folder: string): Promise<BlogPost | null> {
     try {
+        const postsDirectory = path.join(process.cwd(), `src/content/${folder}`);
         const fullPath = path.join(postsDirectory, `${slug}.md`);
         const fileContents = fs.readFileSync(fullPath, "utf8");
         const { data, content } = matter(fileContents);

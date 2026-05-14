@@ -141,7 +141,7 @@ export default function Products() {
                                 <Users className="w-8 h-8 text-teal-600 group-hover:text-white transition-colors duration-300" />
                             </div>
                             <CardTitle className="text-2xl font-bold text-slate-900">
-                                Communities(Beta)
+                                Communities
                             </CardTitle>
                             <CardDescription className="text-slate-600 text-base">
                                 Build membership sites and private communities
