@@ -1,8 +1,8 @@
 import Link from "next/link";
-import { getAllPosts } from "@/app/blog/blog";
+import { getAllPosts } from "@/lib/blog";
 
 export default async function BlogPage() {
-    const posts = await getAllPosts();
+    const posts = await getAllPosts("blog");
 
     return (
         <div className="max-w-4xl mx-auto px-4 py-8">
@@ -26,5 +26,5 @@ export default async function BlogPage() {
 
 export const metadata = {
     title: "Blog",
-    description: "Latest blog posts and insights",
+    description: "Latest blog posts and insights by buisnesstools",
 };

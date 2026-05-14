@@ -7,7 +7,7 @@ interface Props {
 
 export default async function BlogPostPage({ params }: Props) {
     const slug = await params;
-    const post = await getPostBySlug(slug.slug, "blog");
+    const post = await getPostBySlug(slug.slug, "policy");
 
     if (!post) {
         notFound();
@@ -21,7 +21,7 @@ export default async function BlogPostPage({ params }: Props) {
             </header>
 
             <div
-                className="max-w-none blog-content"
+                className="max-w-none policy-content"
                 dangerouslySetInnerHTML={{ __html: post.content }}
             />
         </article>
@@ -30,7 +30,7 @@ export default async function BlogPostPage({ params }: Props) {
 
 // Generate static params for all blog posts
 export async function generateStaticParams() {
-    const posts = await getAllPosts("blog");
+    const posts = await getAllPosts("policy");
     return posts.map((post) => ({
         slug: post.slug,
     }));
@@ -39,7 +39,7 @@ export async function generateStaticParams() {
 // Generate metadata for SEO
 export async function generateMetadata({ params }: Props) {
     const slug = await params;
-    const post = await getPostBySlug(slug.slug, "blog");
+    const post = await getPostBySlug(slug.slug, "policy");
 
     if (!post) {
         return {

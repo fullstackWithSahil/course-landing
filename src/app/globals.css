@@ -217,6 +217,141 @@
     height: 100%;
     object-fit: cover;
 }
+.policy-content {
+    color: #374151;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+/* Paragraphs */
+.policy-content p {
+    margin-bottom: 1.25rem;
+}
+
+/* Headings */
+.policy-content h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #111827;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.policy-content h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2563eb;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.policy-content h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+/* Lists */
+.policy-content ul,
+.policy-content ol {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.policy-content ul {
+    list-style-type: disc;
+}
+
+.policy-content ol {
+    list-style-type: decimal;
+}
+
+.policy-content li {
+    margin-bottom: 0.5rem;
+}
+
+/* Links */
+.policy-content a {
+    color: #2563eb;
+    text-decoration: underline;
+}
+
+.policy-content a:hover {
+    color: #1d4ed8;
+}
+
+/* Strong / Bold */
+.policy-content strong {
+    font-weight: 600;
+    color: #111827;
+}
+
+/* Blockquotes */
+.policy-content blockquote {
+    border-left: 4px solid #d1d5db;
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+    color: #4b5563;
+    font-style: italic;
+    background: #f9fafb;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+/* Tables */
+.policy-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+}
+
+.policy-content th,
+.policy-content td {
+    border: 1px solid #e5e7eb;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+.policy-content th {
+    background-color: #f3f4f6;
+    font-weight: 600;
+}
+
+/* Code */
+.policy-content code {
+    background: #f3f4f6;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+.policy-content pre {
+    background: #111827;
+    color: #f9fafb;
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+}
+
+.policy-content pre code {
+    background: transparent;
+    padding: 0;
+    color: inherit;
+}
+
+/* Horizontal rule */
+.policy-content hr {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 2rem 0;
+}
+
 
 ::-webkit-scrollbar {
     width: 8px; /* Adjust the width as desired */
