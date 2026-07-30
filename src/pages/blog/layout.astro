@@ -2,8 +2,9 @@
 const { frontmatter } = Astro.props;
 import PublicNavbar from "@/components/landingPage/PublicNavbar"; 
 import Footer from "@/components/landingPage/Footer"; 
-import "../../styles/global.css";
+import "@/styles/global.css"
 ---
+
 
 <html>
     <head>
@@ -11,9 +12,9 @@ import "../../styles/global.css";
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charset="utf-8" />
     </head>
-    <body class="blog-content">
+    <body>
         <PublicNavbar client:load/>
-        <article class="max-w-3xl mx-auto px-4 py-8 font-serif">
+        <article class="blog-content max-w-3xl mx-auto px-4 py-8 font-serif">
             <header class="mb-8">
                 <h1 class="text-4xl font-bold mb-4">{frontmatter.title}</h1>
                 <time class="text-gray-600">{frontmatter.date}</time>

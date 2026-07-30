@@ -24,7 +24,7 @@ export default defineConfig({
             },
         ],
         customCss: ['./src/styles/global.css'],
-		}), react()],
+    }), react()],
     vite: {
         plugins: [tailwindcss()],
     },
