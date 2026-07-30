@@ -1,5 +1,5 @@
 ---
-layout: ./layout.astro
+layout: ../../layouts/BlogLayout.astro
 title: "Kajabi vs Teachable"
 date: "2025-09-16"
 excerpt: "A detailed comparision between kajabi and teachable"

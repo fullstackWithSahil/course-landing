@@ -1,5 +1,5 @@
 ---
-layout: ./layout.astro
+layout: ../../layouts/BlogLayout.astro
 title: "How to Make Your Online Course Seem More Legitimate"
 date: "2025-09-16"
 excerpt: "A detailed step by step guide on how to price a course"

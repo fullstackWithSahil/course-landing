@@ -1,5 +1,5 @@
 ---
-layout: ./layout.astro
+layout: ../../layouts/BlogLayout.astro
 title: "Why we exist"
 date: "2025-08-16"
 excerpt: "Why we exist, our vision and mission and how we plan to help content creators"

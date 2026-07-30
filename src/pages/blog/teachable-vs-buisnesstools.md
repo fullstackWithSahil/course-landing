@@ -1,5 +1,5 @@
 ---
-layout: ./layout.astro
+layout: ../../layouts/BlogLayout.astro
 title: "Teachable vs buisnesstools"
 date: "2025-10-13"
 excerpt: "This is a detailed blog camparing features and positioning of Teachable and buisnesstools"

@@ -1,5 +1,5 @@
 ---
-layout: ./layout.astro
+layout: ../../layouts/BlogLayout.astro
 title: "Udemy vs buisnesstools"
 date: "2025-11-7"
 excerpt: "This is a detailed blog camparing features and positioning of Udemy and buisnesstools"

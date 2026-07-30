@@ -1,5 +1,5 @@
 ---
-layout: ./layout.astro
+layout: ../../layouts/PolicyLayout.astro
 title: "Terms of Service"
 date: "2025-09-16"
 excerpt: "Terms and condition for using buisnesstools"

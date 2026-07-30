@@ -1,5 +1,5 @@
 ---
-layout: ./layout.astro
+layout: ../../layouts/BlogLayout.astro
 title: "Kajabi vs buisnesstools"
 date: "2025-10-13"
 excerpt: "This is a detailed blog camparing features and positioning of kajabi and buisnesstools"
