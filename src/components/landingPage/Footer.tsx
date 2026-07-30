@@ -18,7 +18,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="/privacy-policy"
+                                    href="/policy/privacy-policy"
                                     className="hover:text-white focus:text-white focus:outline-none"
                                 >
                                     Privacy Policy
@@ -26,7 +26,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="/toc"
+                                    href="/policy/terms-of-service"
                                     className="hover:text-white focus:text-white focus:outline-none"
                                 >
                                     Terms of Service
@@ -34,7 +34,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="/refund-policy"
+                                    href="/policy/refund-policy"
                                     className="hover:text-white focus:text-white focus:outline-none"
                                 >
                                     Refund Policy

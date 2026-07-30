@@ -48,11 +48,11 @@ We use your information to:
 ## 4. Data Sharing and Third-Party Services
 We do not sell or rent your data. However, we may share data with:
 
-- **Stripe & Razorpay** — Payment processing
-- **Stripe** — Authentication
-- **Resend** — Email communication
-- **Analytics providers** — Usage tracking through cookies
-- **Hosting services** — Vercel for frontend and Hetzner for VPS backend
+- **Stripe & Razorpay** - Payment processing
+- **Stripe** - Authentication
+- **Resend** - Email communication
+- **Analytics providers** - Usage tracking through cookies
+- **Hosting services** - Vercel for frontend and Hetzner for VPS backend
 
 These third-party services have their own privacy policies, and we encourage you to review them.
 

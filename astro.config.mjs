@@ -7,20 +7,21 @@ import react from '@astrojs/react';
 
 // https://astro.build/config
 export default defineConfig({
+    site: 'https://buisnesstools.com',
     integrations: [starlight({
-        title: 'Docs with Tailwind',
+        title: 'buisnesstools',
         social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
         sidebar: [
             {
-                label: 'Guides',
+                label: 'Email',
                 items: [
                     // Each item here is one entry in the navigation menu.
-                    { label: 'Example Guide', slug: 'guides/example' },
+                    { label: 'Getting started', slug: 'email/getting-started' },
                 ],
             },
             {
-                label: 'Reference',
-                items: [{ autogenerate: { directory: 'reference' } }],
+                label: 'sahil', 
+                items: [{ autogenerate: { directory: 'sahil' } }],
             },
         ],
         customCss: ['./src/styles/global.css'],

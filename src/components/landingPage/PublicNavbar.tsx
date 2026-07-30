@@ -92,10 +92,10 @@ export default function PublicNavbar() {
             >
               {navigation.map((link) => (
                 <AccordionItem key={link.title} value={link.title}>
-                  <AccordionTrigger className="bg-inherit">{link.title}</AccordionTrigger>
+                  <AccordionTrigger className="bg-inherit my-0 p-0">{link.title}</AccordionTrigger>
                   <AccordionContent className="flex flex-col gap-0 text-balance">
                     {link.links.map((l) => (
-                      <div key={l.link}>
+                      <div key={l.link} className="m-0 p-0">
                         <a className={pricingStyles} href={l.link}>
                           {l.title}
                         </a>
