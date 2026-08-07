@@ -12,7 +12,7 @@ export default function AboutUsPage() {
 
 				<div className="max-w-5xl mx-auto relative z-10 text-center">
 					<div className="inline-block bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20 mb-6">
-						<span className="text-sm font-semibold text-white">About BusinessTools</span>
+						<span className="text-sm font-semibold text-white">About Whiteowl</span>
 					</div>
 					<h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
 						Your Education Business Deserves Better Than Generic
@@ -34,7 +34,7 @@ export default function AboutUsPage() {
 							These generic solutions don't just look outdated—<strong>they actively hurt your SEO and credibility.</strong>
 						</p>
 						<p className="text-lg leading-relaxed">
-							At BusinessTools, we believe your expertise deserves a professional online presence that reflects the quality of your content.
+							At Whitewowl, we believe your expertise deserves a professional online presence that reflects the quality of your content.
 						</p>
 						<p className="text-lg leading-relaxed">
 							We deliver <strong>hand-coded, SEO-optimized websites</strong> with designs personalized to your brand.
@@ -63,7 +63,7 @@ export default function AboutUsPage() {
 				<div className="max-w-6xl mx-auto">
 					<div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-8 flex items-center justify-center aspect-video">
 						<p className="text-white/60 text-center px-6 max-w-3xl">
-							[Split-screen comparison image: Left side shows a generic Kajabi/Teachable template with stock photos, basic layout, and dated design elements (label: "Cookie-Cutter Platforms"). Right side shows a stunning custom-designed course platform with branded colors, modern UI, professional photography, smooth animations (label: "BusinessTools Custom Design"). Include subtle UI elements like course cards, navigation, and metrics.]
+							[Split-screen comparison image: Left side shows a generic Kajabi/Teachable template with stock photos, basic layout, and dated design elements (label: "Cookie-Cutter Platforms"). Right side shows a stunning custom-designed course platform with branded colors, modern UI, professional photography, smooth animations (label: "Whitewowl Custom Design"). Include subtle UI elements like course cards, navigation, and metrics.]
 						</p>
 					</div>
 				</div>
@@ -79,7 +79,7 @@ export default function AboutUsPage() {
 							</h2>
 							<div className="space-y-6 text-lg text-slate-700 leading-relaxed">
 								<p>
-									<strong className="text-slate-900">BusinessTools is a passionate two-person team based in India</strong> with a big dream: empowering knowledge creators to build thriving online businesses.
+									<strong className="text-slate-900">Whitewowl is a passionate two-person team based in India</strong> with a big dream: empowering knowledge creators to build thriving online businesses.
 								</p>
 								<p>
 									We understand that starting a course or community isn't just about learning software—<strong className="text-slate-900">it's about building a sustainable business.</strong> And that journey can feel overwhelming.
@@ -151,7 +151,7 @@ export default function AboutUsPage() {
 
 					<div className="text-center">
 						<div className="inline-block bg-white/20 backdrop-blur-sm px-8 py-6 rounded-2xl border border-white/30">
-							<p className="text-lg font-semibold mb-2">Every BusinessTools client gets:</p>
+							<p className="text-lg font-semibold mb-2">Every Whitewowl client gets:</p>
 							<p className="text-2xl md:text-3xl font-bold">Free Consultancy & Resources</p>
 							<p className="text-indigo-200 mt-2 italic">Because when you win, we win.</p>
 						</div>

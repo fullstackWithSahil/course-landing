@@ -36,19 +36,19 @@ export const navigation = [
         title: "Us vs Them",
         links: [
             {
-                title: "Kajabi vs buisnesstools",
-                link: "/blog/kajabi-vs-buisnesstools",
+                title: "Kajabi vs WhiteOwl",
+                link: "/blog/kajabi-vs-whiteowl",
             },
             {
-                title: "Teachable vs buisnesstools",
-                link: "/blog/teachable-vs-buisnesstools",
+                title: "Teachable vs WhiteOwl",
+                link: "/blog/teachable-vs-whiteowl",
             },
-            // {title:"Podia vs buisnesstools",link:"/blog/podia-vs-buisnesstools"},
+            // {title:"Podia vs WhiteOwl",link:"/blog/podia-vs-whiteowl"},
             {
-                title: "Udemy vs buisnesstools",
-                link: "/blog/udemy-vs-buisnesstools",
+                title: "Udemy vs WhiteOwl",
+                link: "/blog/udemy-vs-whiteowl",
             },
-            // {title:"Corsera vs buisnesstools",link:"/blog/corsera-vs-buisnesstools"},
+            // {title:"Corsera vs WhiteOwl",link:"/blog/corsera-vs-whiteowl"},
         ],
     },
     {

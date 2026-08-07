@@ -22,7 +22,7 @@ Refunds may be granted in exceptional cases, such as:
 - Service downtime due to technical issues caused by us (subject to review).
 
 ## 4. How to Request a Refund
-If you believe you are eligible for a refund, please contact our support team at support@buisnesstools.in within 7 days of the charge.
+If you believe you are eligible for a refund, please contact our support team at support@trywhiteowl.com within 7 days of the charge.
 
 Refund requests must include relevant details, such as:
 
@@ -36,4 +36,4 @@ We reserve the right to modify this Refund Policy at any time. Users will be not
 
 For any questions regarding this Refund Policy, please contact us at:
 
-support@buisnesstools.in
+support@trywhiteowl.com

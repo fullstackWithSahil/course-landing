@@ -14,12 +14,12 @@ The **Templates** feature allows you to create reusable email structures for you
 1.  Navigate to the **Templates** section from the sidebar menu.
 2.  Click on the **"+" icon** in the "Create a new Template" section.
 
-![Screenshot of the 'Create a new Template' dashboard with the plus icon highlighted](https://assets.buisnesstools.in/docs/email-template/create-template.png)
+![Screenshot of the 'Create a new Template' dashboard with the plus icon highlighted](https://assets.trywhiteowl.com/docs/email-template/create-template.png)
 
 3.  In the popup modal, enter a descriptive **Template Name** (e.g., "Welcome Email").
 4.  Click **Create**.
 
-![Screenshot of the 'Create a new Template' modal with the name 'sahil' being typed into the input field](https://assets.buisnesstools.in/docs/email-template/template-name.png)
+![Screenshot of the 'Create a new Template' modal with the name 'sahil' being typed into the input field](https://assets.trywhiteowl.com/docs/email-template/template-name.png)
 
 ---
 
@@ -31,7 +31,7 @@ Once your template is created, you will enter the editor. Use the toolbar to sty
 * **Text Styling:** Apply **Bold**, *Italics*, or <u>Underlines</u>.
 * **Lists:** Organize information using bulleted or numbered lists.
 
-![Screenshot showing the rich text editor with 'Heading 1' selected and a numbered list being created](https://assets.buisnesstools.in/docs/email-template/email-format.png)
+![Screenshot showing the rich text editor with 'Heading 1' selected and a numbered list being created](https://assets.trywhiteowl.com/docs/email-template/email-format.png)
 
 ---
 

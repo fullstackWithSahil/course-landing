@@ -2,11 +2,11 @@
 layout: ../../layouts/PolicyLayout.astro
 title: "Privacy policy"
 date: "2025-09-16"
-excerpt: "Terms and condition for using buisnesstools"
+excerpt: "Terms and condition for using Whiteowl"
 ---
 
 ## 1. Introduction
-Welcome to businesstools. We respect your privacy and are committed to protecting it through this Privacy Policy.
+Welcome to Whiteowl. We respect your privacy and are committed to protecting it through this Privacy Policy.
 
 This policy explains how we collect, use, and protect your personal information when you use our services.
 
@@ -82,7 +82,7 @@ Depending on your jurisdiction, you may have rights regarding your personal data
 
 To exercise these rights, contact us at:
 
-support@buisnesstools.in
+support@trywhiteowl.com
 
 ## 8. Content Ownership and Responsibility
 
@@ -105,4 +105,4 @@ Users will be notified via email of significant changes.
 ## 11. Contact Information
 If you have any questions about this Privacy Policy, please contact us at:
 
-support@buisnesstools.in
+support@trywhiteowl.com

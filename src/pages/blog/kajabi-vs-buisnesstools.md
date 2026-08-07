@@ -4,25 +4,25 @@ title: "Kajabi vs buisnesstools"
 date: "2025-10-13"
 excerpt: "This is a detailed blog camparing features and positioning of kajabi and buisnesstools"
 ---
-![Kajabi vs buisnesstools](https://assets.buisnesstools.in/blog/kajabi-vs-buisnesstools/hero.png)
+![Kajabi vs buisnesstools](https://assets.trywhiteowl.com/blog/kajabi-vs-buisnesstools/hero.png)
 # Don't Choose a Platform. Choose a Business Partner.
 
 See why serious course creators are switching from generic builders to our hands-on **partnership model.**
 
-Starting an online course business is thrilling, but the platform you choose is the backbone of your success. If you're comparing **BusinessTools** and **Kajabi**, this guide will help you make a clear decision based on what truly matters: your goals, your budget, and your need for genuine support.
+Starting an online course business is thrilling, but the platform you choose is the backbone of your success. If you're comparing **Whitewowl** and **Kajabi**, this guide will help you make a clear decision based on what truly matters: your goals, your budget, and your need for genuine support.
 
 # The Partnership vs. Software Mindset
 
 Before diving into features, let's nail down the core difference:
 
 - **Kajabi** is a powerful **Software-as-a-Service (SaaS)** platform. It gives you best-in-class tools and expects you to build, manage, and scale your course business independently.
-- **BusinessTools** is a **Partner-as-a-Service (PaaS)** platform. We combine robust software with **hands-on support and custom development**, treating your business growth as our most important metric.
+- **Whitewowl** is a **Partner-as-a-Service (PaaS)** platform. We combine robust software with **hands-on support and custom development**, treating your business growth as our most important metric.
 
 Now, let's explore how this foundational philosophy impacts the key areas of your business.
 
 # Website Design & Performance
 
-Your website is your storefront. With Kajabi, you manage the build; with BusinessTools, we build it for you.
+Your website is your storefront. With Kajabi, you manage the build; with Whiteowl, we build it for you.
 
 ## Kajabi’s Approach: Self-Service Builder
 
@@ -32,7 +32,7 @@ Kajabi provides a drag-and-drop website builder with templates. This offers flex
 - **Performance Hit:** No-code builders often produce slower, unoptimized code. Many Kajabi sites score between **40–60 on Google PageSpeed Insights**, which directly impacts SEO and visitor experience.
 - **Generic Look:** Despite the customization options, many sites built with blocks and standard templates can end up looking similar.
 
-## BusinessTools’ Approach: Custom, Hand-Coded Development
+## Whiteowl’ Approach: Custom, Hand-Coded Development
 
 We provide a dedicated professional web designer and developer **at no additional cost**.
 
@@ -45,7 +45,7 @@ We provide a dedicated professional web designer and developer **at no additiona
 
 > This is a screenshot of google website insites comparing performance our websites vs kajabi teacher's website (website from an actual techer)
 
-![website performance comparision](https://assets.buisnesstools.in/blog/kajabi-vs-buisnesstools/performance-score.png)
+![website performance comparision](https://assets.trywhiteowl.com/blog/kajabi-vs-buisnesstools/performance-score.png)
 
 # Customer Support Philosophy
 
@@ -55,7 +55,7 @@ We believe your success hinges on getting the right answer quickly, especially w
 
 Kajabi offers standard customer support focused on platform issues. While functional, long response times and limited scope can lead to frustration, forcing you to solve complex business problems yourself.
 
-## BusinessTools Support: Unlimited Scope
+## Whiteowl Support: Unlimited Scope
 
 Our support is an extension of our partnership:
 
@@ -71,7 +71,7 @@ Launching a course involves more than just content—you need expertise in marke
 
 Kajabi offers access to a marketplace of verified, third-party experts for consultation on design, marketing, and tech setup. This is a pay-as-you-go model, typically costing **$50+ per hour.**
 
-## BusinessTools Consultancy: Free and Integrated
+## Whiteowl Consultancy: Free and Integrated
 
 Free, actionable consultancy is included with your subscription:
 
@@ -81,9 +81,9 @@ Free, actionable consultancy is included with your subscription:
 
 # Pricing & Value Comparison
 
-Your budget is critical. BusinessTools is designed to give you dramatically more features and flexibility for less, allowing you to scale affordably.
+Your budget is critical. Whiteowl is designed to give you dramatically more features and flexibility for less, allowing you to scale affordably.
 
-| Feature | Kajabi (Basic Plan) | BusinessTools (Standard Plan) | BusinessTools (PAYG Plan) |
+| Feature | Kajabi (Basic Plan) | Whiteowl (Standard Plan) | Whiteowl (PAYG Plan) |
 | --- | --- | --- | --- |
 | **Price** | **$89/month** | **$55/month** | **$2 per active student (One-time cost)** |
 | **Products (Courses)** | 1 | **5** | All features included |
@@ -98,8 +98,8 @@ Your budget is critical. BusinessTools is designed to give you dramatically more
 Let's look at value when you have 100 active students and want to grow:
 
 - **Kajabi Basic:** $89/month (assuming you stay within contact/product limits).
-- **BusinessTools Standard:** **$55/month** (includes unlimited contacts, 5 products, and custom development).
-- **BusinessTools PAYG:** $200 one-time cost (if you only onboarded 100 students this month, you don't pay next month).
+- **Whiteowl Standard:** **$55/month** (includes unlimited contacts, 5 products, and custom development).
+- **Whiteowl PAYG:** $200 one-time cost (if you only onboarded 100 students this month, you don't pay next month).
 
 Our Standard Plan provides superior features at nearly half the price, and our PAYG option makes testing and bootstrapping your course idea risk-free.
 
@@ -116,7 +116,7 @@ Building a community around your course increases engagement, completion rates, 
 - Creating additional communities requires additional "products"
 - Setup can be complex.
 
-## BusinessTools Communities
+## Whiteowl Communities
 
 - **Group chat is included free** with every course.
 - Organize discussions with topic-based channels.
@@ -124,7 +124,7 @@ Building a community around your course increases engagement, completion rates, 
 - Standalone community option available ($20/month) if you don't need course features
 - Currently supports text messaging and file sharing (voice chat in development)
 
-![UI for chat application](https://assets.buisnesstools.in/blog/kajabi-vs-buisnesstools/chat-ui.png)
+![UI for chat application](https://assets.trywhiteowl.com/blog/kajabi-vs-buisnesstools/chat-ui.png)
 
 # Live Sessions & Webinars
 
@@ -134,7 +134,7 @@ Building a community around your course increases engagement, completion rates, 
 - Host webinars and live workshops directly in the platform
 - Integrated with your course materials
 
-## BusinessTools
+## Whiteowl
 
 - Live sessions are not currently available in-platform
 - Can integrate with Zoom, Google Meet, or other tools
@@ -144,7 +144,7 @@ If frequent live sessions and webinars are an important part of your buisness an
 
 # Who Should Choose Which Platform?
 
-## Choose BusinessTools If...
+## Choose Whiteowl If...
 
 - ✅ You're launching your **first course** and need guidance, not just software.
 
@@ -172,14 +172,14 @@ Both platforms can help you succeed, but they offer fundamentally different jour
 
 Choose **Kajabi** if you want a well-known, powerful software suite and prefer to build and manage independently.
 
-Choose **BusinessTools** if you want a true **business partner** who provides hands-on support, custom development, and treats your success as our own—all at a far more affordable price point.
+Choose **Whiteowl** if you want a true **business partner** who provides hands-on support, custom development, and treats your success as our own—all at a far more affordable price point.
 
-We've built BusinessTools on the belief that course creators deserve more than just software—they deserve a dedicated partner.
+We've built Whiteowl on the belief that course creators deserve more than just software—they deserve a dedicated partner.
 
 ### Ready to Make Your Decision?
 
-1. **Schedule a Free Consultation:** Let's [discuss](https://buisnesstools.in/contact-us) your specific needs and see if we're the right fit.
-2. **Start with Pay-As-You-Go:** No commitment, just $2 per student. [Test us risk-free.](https://app.buisnesstools.in/onboarding)
-3. **Special Migration Offer:** Switching from Kajabi? We'll handle your entire migration for free, including content transfer, design, and setup. [**Learn more →**](https://buisnesstools.in/contact-us)
+1. **Schedule a Free Consultation:** Let's [discuss](https://trywhiteowl.com/contact-us) your specific needs and see if we're the right fit.
+2. **Start with Pay-As-You-Go:** No commitment, just $2 per student. [Test us risk-free.](https://app.trywhiteowl.com/onboarding)
+3. **Special Migration Offer:** Switching from Kajabi? We'll handle your entire migration for free, including content transfer, design, and setup. [**Learn more →**](https://trywhiteowl.com/contact-us)
 
 Have questions? Our support team is standing by. Most responses within **60 minutes**. **Contact us now.**

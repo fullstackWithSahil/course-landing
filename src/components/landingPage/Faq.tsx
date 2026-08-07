@@ -64,8 +64,8 @@ const FaqItem = ({
 const faqs = [
     {
         question:
-            "Do I need any technical knowledge or coding skills to use Buisnesstools.in?",
-        answer: "Absolutely not! Buisnesstools.in is designed for educators and creators, not developers. We handle all the technical complexities – from website setup and hosting to secure video streaming and payment integration – so you can focus entirely on creating and teaching.",
+            "Do I need any technical knowledge or coding skills to use WhiteOwl?",
+        answer: "Absolutely not! WhiteOwl is designed for educators and creators, not developers. We handle all the technical complexities – from website setup and hosting to secure video streaming and payment integration – so you can focus entirely on creating and teaching.",
     },
     {
         question: "How does payment processing work for my courses?",
@@ -73,7 +73,7 @@ const faqs = [
     },
     {
         question: "Do you offer a free trial or a free tier to get started?",
-        answer: "While we do not offer a free tier, we are confident in the value and comprehensive support our platform provides. We encourage you to book a personalized demo with our team to see Buisnesstools.in in action and understand how it perfectly fits your course creation needs before committing.",
+        answer: "While we do not offer a free tier, we are confident in the value and comprehensive support our platform provides. We encourage you to book a personalized demo with our team to see WhiteOwl in action and understand how it perfectly fits your course creation needs before committing.",
     },
     {
         question: "Can I use my own domain name for my course website?",
@@ -90,7 +90,7 @@ const faqs = [
     {
         question:
             "What if I already have students or courses on another platform?",
-        answer: `We understand that migrating can seem daunting. Our team can guide you through the process of transferring your existing content and student data to Buisnesstools.in, making the transition as smooth as possible so you don't lose progress. contact us at +91 9867624595`,
+        answer: `We understand that migrating can seem daunting. Our team can guide you through the process of transferring your existing content and student data to Whiteowl, making the transition as smooth as possible so you don't lose progress. contact us at +91 9867624595`,
     },
     {
         question:

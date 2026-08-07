@@ -5,7 +5,7 @@ const testimonials = [
         name: "Sarah Mitchell",
         role: "Marketing Expert",
         content:
-            "Buisnesstools didn't just give me software; they built my entire course site in 3 days. I launched and made $5k in my first week.",
+            "Whiteowl didn't just give me software; they built my entire course site in 3 days. I launched and made $5k in my first week.",
         image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150&h=150",
     },
     {
@@ -53,7 +53,7 @@ export default function TrustSection() {
                     </h2>
                     <p className="text-lg text-slate-600 max-w-2xl mx-auto">
                         Don't just take our word for it. Here's what creators
-                        are saying about their experience with Buisnesstools.
+                        are saying about their experience with Whiteowl.
                     </p>
                 </div>
 

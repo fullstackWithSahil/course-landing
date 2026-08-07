@@ -6,7 +6,7 @@ excerpt: "Terms and condition for using buisnesstools"
 ---
 
 ## 1. Introduction
-Welcome to buisnesstools.in ("Company","we," "our," "us"). These Terms of Service ("Terms") govern your use of our website and services. By accessing or using our platform, you agree to comply with these Terms. If you do not agree, you must not use our services.
+Welcome to trywhiteowl.com ("Company","we," "our," "us"). These Terms of Service ("Terms") govern your use of our website and services. By accessing or using our platform, you agree to comply with these Terms. If you do not agree, you must not use our services.
 
 ## 2. Eligibility
 You must be at least 18 years old to use our services.By using our platform, you represent that you have the legal capacity to enter into this agreement.
@@ -50,7 +50,7 @@ You must be at least 18 years old to use our services.By using our platform, you
 ## 8. Suspension and Termination
 (a) We may suspend or terminate your access to our services if you violate these Terms.
 
-(b) Users may request account deletion by contacting us at support@buisnesstools.in.
+(b) Users may request account deletion by contacting us at support@trywhiteowl.com.
 
 ## 9. Governing Law and Dispute Resolution
 (a) These Terms are governed by the laws of India.
@@ -61,4 +61,4 @@ You must be at least 18 years old to use our services.By using our platform, you
 We may update these Terms periodically. Users will be notified of significant changes via email.
 
 ## 11. Contact Information
-For questions about these Terms, contact us at support@buisnesstools.in.
+For questions about these Terms, contact us at support@trywhiteowl.com.

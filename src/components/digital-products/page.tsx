@@ -73,7 +73,7 @@ export default function DigitalProductsPage() {
                             </strong>
                         </p>
                         <p className="text-lg leading-relaxed">
-                            With BusinessTools, you get secure file hosting,
+                            With Whitewowl, you get secure file hosting,
                             instant delivery, and complete sales management—all
                             in one professional platform.
                         </p>

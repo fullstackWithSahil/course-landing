@@ -40,7 +40,7 @@ export default function CoursesPage() {
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <a
-                            href={"https://app.buisnesstools.in/onboarding"}    
+                            href={"https://app.trywhiteowl.com/onboarding"}    
                             className="bg-white hover:bg-slate-100 text-slate-900 font-bold py-4 px-8 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl inline-flex items-center justify-center"
                         >
                             Start Creating Courses
@@ -71,7 +71,7 @@ export default function CoursesPage() {
                             </strong>
                         </p>
                         <p className="text-lg leading-relaxed">
-                            With BusinessTools, you get a professional course
+                            With Whitewowl, you get a professional course
                             platform that's intuitive to use but powerful enough
                             to deliver exceptional learning experiences.
                         </p>
@@ -153,7 +153,7 @@ export default function CoursesPage() {
 
                         <div className="rounded-2xl aspect-square flex items-center justify-center">
                             <img
-                                src="https://assets.buisnesstools.in/landingpage/course-builder.png"
+                                src="https://assets.trywhiteowl.com/landingpage/course-builder.png"
                                 alt="course-builder"
                             />
                         </div>
@@ -412,7 +412,7 @@ export default function CoursesPage() {
                             Ready to Launch Your First Course?
                         </h2>
                         <p className="text-xl text-slate-300 leading-relaxed mb-8">
-                            Join thousands of creators who trust BusinessTools
+                            Join thousands of creators who trust Whitewowl
                             to deliver exceptional learning experiences
                         </p>
                     </div>
@@ -442,7 +442,7 @@ export default function CoursesPage() {
                         Stop fighting with complicated tools. Start teaching.
                     </p>
                     <a
-                        href={"https://app.buisnesstools.in/onboarding"}
+                        href={"https://app.trywhiteowl.com/onboarding"}
                         className="group bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 px-10 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl inline-flex items-center"
                     >
                         Create Your First Course

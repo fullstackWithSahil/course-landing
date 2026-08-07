@@ -73,10 +73,10 @@ export default function PublicNavbar() {
           </div>
           <div className="flex items-center">
               <span className="hidden md:block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition mx-1">
-                <a href="https://accounts.buisnesstools.in/sign-in">Sign In</a>
+                <a href="https://accounts.trywhiteowl.com/sign-in">Sign In</a>
               </span>
               <span className="hidden md:block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition mx-1">
-                <a href="https://accounts.buisnesstools.in/sign-up">Sign Up</a>
+                <a href="https://accounts.trywhiteowl.com/sign-up">Sign Up</a>
               </span>
           </div>
         </div>
@@ -108,7 +108,7 @@ export default function PublicNavbar() {
             </Accordion>
             <div className="flex items-center justify-between">
                 <button className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">
-                  <a href="https://accounts.buisnesstools.in/sign-in">Sign In</a>
+                  <a href="https://accounts.trywhiteowl.com/sign-in">Sign In</a>
                 </button>
             </div>
           </div>

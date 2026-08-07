@@ -20,13 +20,13 @@ export default function Page(){
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <div className="mb-6">
                   <h3 className="font-medium text-gray-900">Company</h3>
-                  <p className="text-gray-700">Business Tools Online</p>
+                  <p className="text-gray-700">WhiteOwl</p>
                 </div>
                 
                 <div className="mb-6">
                   <h3 className="font-medium text-gray-900">Email</h3>
-                  <a href={`mailto:fullstackwithsahil@gmail.com`} className="text-blue-600 hover:underline">
-                    sahil@buisnesstools.in
+                  <a href={`mailto:support@trywhiteowl.com`} className="text-blue-600 hover:underline">
+                    support@trywhiteowl.com
                   </a>
                 </div>
                 

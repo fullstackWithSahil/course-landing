@@ -73,7 +73,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="https://docs.buisnesstools.in/course/getting-started/"
+                                    href="https://trywhiteowl.com/docs/course/getting-started"
                                     className="hover:text-white focus:text-white focus:outline-none"
                                 >
                                     Resources
@@ -96,7 +96,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="https://docs.buisnesstools.in/course/getting-started/"
+                                    href="https://trywhiteowl.com/docs/course/getting-started/"
                                     className="hover:text-white focus:text-white focus:outline-none"
                                 >
                                     Documentation
@@ -114,7 +114,7 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className="border-t border-gray-800 mt-12 pt-8 text-sm text-center">
-                    © {new Date().getFullYear()} Buisnesstools. All rights
+                    © {new Date().getFullYear()} WhiteOwl. All rights
                     reserved.
                 </div>
             </div>

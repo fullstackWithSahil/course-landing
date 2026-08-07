@@ -1,16 +1,16 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: "Udemy vs buisnesstools"
+title: "Udemy vs Whiteowl"
 date: "2025-11-7"
-excerpt: "This is a detailed blog camparing features and positioning of Udemy and buisnesstools"
+excerpt: "This is a detailed blog camparing features and positioning of Udemy and Whiteowl"
 ---
-![Udemy vs buisnesstools](https://assets.buisnesstools.in/Udemy-VS-buisnesstools.png)
+![Udemy vs Whiteowl](https://assets.Whiteowl.in/Udemy-VS-Whiteowl.png)
 
 # Philosophy
 
 Udemy is a marketplace of online courses where you can sign up as an instructor and upload your content. You don't own the platform and you don't have any control over student data, pricing, or terms and conditions.
 
-Buisnesstools, on the other hand, lets you build your own platform with your own branding, and you have complete control of the platform and data.
+Whiteowl, on the other hand, lets you build your own platform with your own branding, and you have complete control of the platform and data.
 
 # Revenue Sharing
 
@@ -23,9 +23,9 @@ Udemy uses a tiered revenue-share model depending on how students find your cour
 - Sales through Udemy's paid ads or affiliates give you only 25%.
 - Udemy often offers discounts on courses, which can reduce your earnings drastically.
 
-### Buisnesstools
+### Whiteowl
 
-On Buisnesstools, you earn 100% of what your course is priced at, no matter how the student came to your platform. You just have to pay a 2.5% transaction fee, which is a standard fee for all payment aggregators.
+On Whiteowl, you earn 100% of what your course is priced at, no matter how the student came to your platform. You just have to pay a 2.5% transaction fee, which is a standard fee for all payment aggregators.
 
 # Pricing and Sales Trap
 
@@ -35,9 +35,9 @@ On Buisnesstools, you earn 100% of what your course is priced at, no matter how 
 - This can undervalue your course, especially if it is high quality and comprehensive.
 - Pricing control is limited on Udemy.
 
-### Buisnesstools
+### Whiteowl
 
-- Buisnesstools does not have any control over the prices of your courses.
+- Whiteowl does not have any control over the prices of your courses.
 - You decide what you want to sell your course for.
 - You can also change the price of your course at any time.
 
@@ -52,10 +52,10 @@ On Udemy, you don't own the platform, hence you have to follow their guidelines.
 - You cannot include direct links or references to paid content outside Udemy in course materials or announcements.
 - In 2024, Udemy introduced a generative AI program that enrolled instructor content automatically to train AI tools, with limited opt-out options.
 
-### Buisnesstools
+### Whiteowl
 
-- On Buisnesstools, you own the platform and you decide what content should be on your platform.
-- Buisnesstools does not have any restrictions on the type of content as long as it is legal.
+- On Whiteowl, you own the platform and you decide what content should be on your platform.
+- Whiteowl does not have any restrictions on the type of content as long as it is legal.
 - The content on your platform should abide by your local law, and you are responsible for the consequences of your content.
 
 # Data Control and Customer Relationships
@@ -68,7 +68,7 @@ Students who have purchased your previous courses and are satisfied with them ar
 - This limits your ability to build long-term relationships, sales funnels, or loyalty.
 - Emailing students is done via Udemy's platform, with no direct contact info given.
 
-### Buisnesstools
+### Whiteowl
 
 - You own all the data on your platform, including the emails.
 - That is the reason having access to student emails is important.
@@ -82,11 +82,11 @@ The courses on Udemy are generally perceived as generic courses. If you have a c
 
 Having your own website and providing Q&A support makes your course seem more legitimate and justifies a higher cost. Read this article on how to make your course seem more legitimate.
 
-On top of that, on Buisnesstools, students can comment on your videos, you can reply to them, they can message you on group chat or interact with other students and engage in the community, which is not possible on Udemy.
+On top of that, on Whiteowl, students can comment on your videos, you can reply to them, they can message you on group chat or interact with other students and engage in the community, which is not possible on Udemy.
 
 If you want a low-effort online course and you don't want to invest time and money building an education business, Udemy is for you.
 
-If you are serious about providing quality education, user experience, building communities, and starting a business, Buisnesstools is the better choice.
+If you are serious about providing quality education, user experience, building communities, and starting a business, Whiteowl is the better choice.
 
 # Growth Potential
 
@@ -96,7 +96,7 @@ Udemy does not support these products, so you will have to use other platforms t
 
 It's not a good experience for students to have to switch between multiple applications to access your products, e.g., Udemy for courses and Slack for communities.
 
-Also, these are generic platforms and do not convey strong branding. If you get started with Buisnesstools, you can slowly release new products, and all of them will be available on your own custom-made website with your branding.
+Also, these are generic platforms and do not convey strong branding. If you get started with Whiteowl, you can slowly release new products, and all of them will be available on your own custom-made website with your branding.
 
 # Conclusion
 
@@ -106,7 +106,7 @@ Also, these are generic platforms and do not convey strong branding. If you get 
 - If you don't have time to provide support.
 - If you don't mind sharing a chunk of your revenue for managing your business.
 
-### When to Choose Buisnesstools
+### When to Choose Whiteowl
 
 - If you are serious about building an education-based business.
 - If you want full control over branding, pricing, student data, and customer relationships.

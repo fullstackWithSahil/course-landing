@@ -41,7 +41,7 @@ export default function CommunitiesPage() {
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <a
-                            href="https://app.buisnesstools.in/onboarding"
+                            href="https://app.trywhiteowl.com/onboarding"
                             className="bg-white hover:bg-slate-100 text-slate-900 font-bold py-4 px-8 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl inline-flex items-center justify-center"
                         >
                             Start Building Community
@@ -69,7 +69,7 @@ export default function CommunitiesPage() {
                             <strong>Your community deserves better.</strong>
                         </p>
                         <p className="text-lg leading-relaxed">
-                            With BusinessTools, you get a branded community
+                            With Whitewowl, you get a branded community
                             platform that you own and control—where members
                             actually want to spend time.
                         </p>
@@ -113,7 +113,7 @@ export default function CommunitiesPage() {
                     <div className="bg-linear-to-br from-slate-800 to-slate-900 rounded-2xl p-8 flex items-center justify-center aspect-video">
                         <img
                             src={
-                                "https://assets.buisnesstools.in/blog/kajabi-vs-buisnesstools/chat-ui.png"
+                                "https://assets.trywhiteowl.com/blog/kajabi-vs-buisnesstools/chat-ui.png"
                             }
                         />
                     </div>
@@ -553,7 +553,7 @@ export default function CommunitiesPage() {
                         Create a community platform that you own, control, and
                         monetize—starting today.
                     </p>
-                    <a href="https://app.buisnesstools.in/onboarding">
+                    <a href="https://app.trywhiteowl.com/onboarding">
                         <button className="group bg-teal-600 hover:bg-teal-700 text-white font-bold py-4 px-10 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl inline-flex items-center">
                             Launch Your Community
                             <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-200" />
