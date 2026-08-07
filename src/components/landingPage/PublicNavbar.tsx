@@ -1,15 +1,12 @@
-"use client";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { ChevronDown, Triangle, X } from "lucide-react";
-import Image from "next/image";
+import { ChevronDown, X } from "lucide-react";
 import { useState } from "react";
 import logo from "@/assets/logo.1141418a.png";
-import { useRouter } from "next/navigation";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -19,24 +16,21 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import { navigation, pricingStyles } from "./navigation";
-import Link from "next/link";
-import { Badge } from "../ui/badge";
 
 export default function PublicNavbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const router = useRouter();
 
   return (
     <header className="bg-white top-0 z-50 shadow-md">
-      <nav className="max-w-7xl mx-auto px-4 py-5 flex justify-between items-center">
+      <nav className="max-w-7xl mx-auto px-4 flex justify-between items-center">
         {/* Logo */}
-        <div
-          className="flex items-center gap-2"
-          onClick={() => router.push("/")}
+        <a
+          className="flex items-center gap-2 cursor-pointer"
+          href="/"
         >
-          <Image src={logo} alt="logo" width={50} height={50} />
+          <img src={typeof logo === "string" ? logo : logo.src} alt="logo" width={50} height={50} />
           <h1 className="text-3xl font-extrabold">Courses</h1>
-        </div>
+        </a>
         <div className="flex items-center gap-3">
           <button
             className="md:hidden text-gray-700 focus:outline-none"
@@ -50,13 +44,15 @@ export default function PublicNavbar() {
             <NavigationMenu>
               <NavigationMenuList>
                 <NavigationMenuItem>
-                  <Link href={"/pricing"} className={pricingStyles}>
+                  <a href={"/pricing"} className={pricingStyles}>
                     Pricing
-                  </Link>
+                  </a>
                 </NavigationMenuItem>
                 {navigation.map((iteam) => (
                   <NavigationMenuItem key={iteam.title}>
-                    <NavigationMenuTrigger>{iteam.title}</NavigationMenuTrigger>
+                        <NavigationMenuTrigger className="bg-inherit">
+                            {iteam.title}
+                        </NavigationMenuTrigger>
                     <NavigationMenuContent>
                       {iteam.links.map((link) => (
                         <div key={link.title}>
@@ -66,7 +62,7 @@ export default function PublicNavbar() {
                           >
                             {link.title}
                           </NavigationMenuLink>
-                          <hr />
+                          <hr className="border-gray-200 border" />
                         </div>
                       ))}
                     </NavigationMenuContent>
@@ -77,10 +73,10 @@ export default function PublicNavbar() {
           </div>
           <div className="flex items-center">
               <span className="hidden md:block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition mx-1">
-                <a href="https://accounts.buisnesstools.in/sign-in">Sign In</a>
+                <a href="https://accounts.trywhiteowl.com/sign-in">Sign In</a>
               </span>
               <span className="hidden md:block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition mx-1">
-                <a href="https://accounts.buisnesstools.in/sign-up">Sign Up</a>
+                <a href="https://accounts.trywhiteowl.com/sign-up">Sign Up</a>
               </span>
           </div>
         </div>
@@ -96,13 +92,13 @@ export default function PublicNavbar() {
             >
               {navigation.map((link) => (
                 <AccordionItem key={link.title} value={link.title}>
-                  <AccordionTrigger>{link.title}</AccordionTrigger>
-                  <AccordionContent className="flex flex-col gap-4 text-balance">
+                  <AccordionTrigger className="bg-inherit my-0 p-0">{link.title}</AccordionTrigger>
+                  <AccordionContent className="flex flex-col gap-0 text-balance">
                     {link.links.map((l) => (
-                      <div key={l.link}>
-                        <Link className={pricingStyles} href={l.link}>
+                      <div key={l.link} className="m-0 p-0">
+                        <a className={pricingStyles} href={l.link}>
                           {l.title}
-                        </Link>
+                        </a>
                         <hr />
                       </div>
                     ))}
@@ -112,7 +108,7 @@ export default function PublicNavbar() {
             </Accordion>
             <div className="flex items-center justify-between">
                 <button className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">
-                  <a href="https://accounts.buisnesstools.in/sign-in">Sign In</a>
+                  <a href="https://accounts.trywhiteowl.com/sign-in">Sign In</a>
                 </button>
             </div>
           </div>

@@ -1,6 +1,5 @@
 "use client";
 import { ArrowRight, CheckCircle2, Sparkles } from "lucide-react";
-import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -62,20 +61,20 @@ export default function Hero() {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <a
-                href="https://app.buisnesstools.in/onboarding"
+                href="https://app.trywhiteowl.com/onboarding"
                 className="group bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 px-8 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl flex items-center justify-center"
               >
                 Launch Your Course Website
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-200" />
               </a>
 
-              <Link
+              <a
                 href={"#consultancy"}
                 className="group bg-white hover:bg-slate-50 text-slate-700 font-semibold py-4 px-8 rounded-lg transition-all duration-200 border-2 border-slate-200 hover:border-slate-300 flex items-center justify-center"
               >
                 <Sparkles className="w-5 h-5 mr-2 text-indigo-600" />
                 Book Free Strategy Call
-              </Link>
+              </a>
             </div>
           </div>
 

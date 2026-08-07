@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default function Footer() {
     return (
         <footer className="bg-gray-900 text-gray-300 py-12">
@@ -11,36 +9,36 @@ export default function Footer() {
                         </h3>
                         <ul className="space-y-2">
                             <li>
-                                <Link
+                                <a
                                     href="/contact-us"
                                     className="hover:text-white focus:text-white focus:outline-none"
                                 >
                                     Contact Us
-                                </Link>
+                                </a>
                             </li>
                             <li>
-                                <Link
-                                    href="/privacy-policy"
+                                <a
+                                    href="/policy/privacy-policy"
                                     className="hover:text-white focus:text-white focus:outline-none"
                                 >
                                     Privacy Policy
-                                </Link>
+                                </a>
                             </li>
                             <li>
-                                <Link
-                                    href="/toc"
+                                <a
+                                    href="/policy/terms-of-service"
                                     className="hover:text-white focus:text-white focus:outline-none"
                                 >
                                     Terms of Service
-                                </Link>
+                                </a>
                             </li>
                             <li>
-                                <Link
-                                    href="/refund-policy"
+                                <a
+                                    href="/policy/refund-policy"
                                     className="hover:text-white focus:text-white focus:outline-none"
                                 >
                                     Refund Policy
-                                </Link>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -66,16 +64,16 @@ export default function Footer() {
                                 </a>
                             </li>
                             <li>
-                                <Link
+                                <a
                                     href="/blog"
                                     className="hover:text-white focus:text-white focus:outline-none"
                                 >
                                     Blogs
-                                </Link>
+                                </a>
                             </li>
                             <li>
                                 <a
-                                    href="https://docs.buisnesstools.in/course/getting-started/"
+                                    href="https://trywhiteowl.com/docs/course/getting-started"
                                     className="hover:text-white focus:text-white focus:outline-none"
                                 >
                                     Resources
@@ -89,34 +87,34 @@ export default function Footer() {
                         </h4>
                         <ul className="space-y-2">
                             <li>
-                                <Link
+                                <a
                                     href="/contact-us"
                                     className="hover:text-white focus:text-white focus:outline-none"
                                 >
                                     Help Center
-                                </Link>
+                                </a>
                             </li>
                             <li>
                                 <a
-                                    href="https://docs.buisnesstools.in/course/getting-started/"
+                                    href="https://trywhiteowl.com/docs/course/getting-started/"
                                     className="hover:text-white focus:text-white focus:outline-none"
                                 >
                                     Documentation
                                 </a>
                             </li>
                             <li>
-                                <Link
+                                <a
                                     href="/contact-us"
                                     className="hover:text-white focus:text-white focus:outline-none"
                                 >
                                     Contact Us
-                                </Link>
+                                </a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div className="border-t border-gray-800 mt-12 pt-8 text-sm text-center">
-                    © {new Date().getFullYear()} Buisnesstools. All rights
+                    © {new Date().getFullYear()} WhiteOwl. All rights
                     reserved.
                 </div>
             </div>

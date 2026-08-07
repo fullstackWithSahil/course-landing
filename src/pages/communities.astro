@@ -1,0 +1,31 @@
+---
+import Page from "@/components/communities/page";
+import Footer from "@/components/landingPage/Footer";
+import PublicNavbar from "@/components/landingPage/PublicNavbar";
+import "@/styles/extra.css";
+---
+
+<tshtml>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8" />
+            <meta
+                name="viewport"
+                content="width=device-width, initial-scale=1.0"
+            />
+            <title>
+                Courses - Launch Your Online Course Without Touching Tech
+            </title>
+            <meta
+                name="description"
+                content="We build your website, host your course, and help you grow. Your technical partner in course creation."
+            />
+            <link rel="icon" type="image/png" href="/favicon.svg" />
+        </head>
+        <body class="bg-white text-slate-900 antialiased">
+            <PublicNavbar client:load />
+            <Page />
+            <Footer />
+        </body>
+    </html>
+</tshtml>

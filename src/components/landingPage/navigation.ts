@@ -36,19 +36,19 @@ export const navigation = [
         title: "Us vs Them",
         links: [
             {
-                title: "Kajabi vs buisnesstools",
-                link: "/blog/kajabi-vs-buisnesstools",
+                title: "Kajabi vs WhiteOwl",
+                link: "/blog/kajabi-vs-whiteowl",
             },
             {
-                title: "Teachable vs buisnesstools",
-                link: "/blog/teachable-vs-buisnesstools",
+                title: "Teachable vs WhiteOwl",
+                link: "/blog/teachable-vs-whiteowl",
             },
-            // {title:"Podia vs buisnesstools",link:"/blog/podia-vs-buisnesstools"},
+            // {title:"Podia vs WhiteOwl",link:"/blog/podia-vs-whiteowl"},
             {
-                title: "Udemy vs buisnesstools",
-                link: "/blog/udemy-vs-buisnesstools",
+                title: "Udemy vs WhiteOwl",
+                link: "/blog/udemy-vs-whiteowl",
             },
-            // {title:"Corsera vs buisnesstools",link:"/blog/corsera-vs-buisnesstools"},
+            // {title:"Corsera vs WhiteOwl",link:"/blog/corsera-vs-whiteowl"},
         ],
     },
     {
@@ -61,4 +61,4 @@ export const navigation = [
 ];
 
 export const pricingStyles =
-    "group inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground disabled:pointer-events-none disabled:opacity-50 data-[state=open]:hover:bg-accent data-[state=open]:text-accent-foreground data-[state=open]:focus:bg-accent data-[state=open]:bg-accent/50 focus-visible:ring-ring/50 outline-none transition-[color,box-shadow] focus-visible:ring-[3px] focus-visible:outline-1";
+    "group inline-flex h-9 w-max items-center justify-center rounded-md bg-background text-sm font-medium hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground disabled:pointer-events-none disabled:opacity-50 data-[state=open]:hover:bg-accent data-[state=open]:text-accent-foreground data-[state=open]:focus:bg-accent data-[state=open]:bg-accent/50 focus-visible:ring-ring/50 outline-none transition-[color,box-shadow] focus-visible:ring-[3px] focus-visible:outline-1";

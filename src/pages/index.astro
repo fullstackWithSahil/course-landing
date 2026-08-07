@@ -1,0 +1,36 @@
+---
+import PublicNavbar from "../components/landingPage/PublicNavbar";
+import Hero from "../components/landingPage/Hero";
+import Products from "../components/landingPage/Products";
+import PartnerSection from "../components/landingPage/Partner";
+import Faq from "../components/landingPage/Faq";
+import Leadmagnet from "../components/landingPage/Leadmagnet";
+import TrustSection from "../components/landingPage/TrustSection";
+import ResourcesCTA from "../components/landingPage/ResourcesCTA";
+import Footer from "../components/landingPage/Footer";
+import "../styles/extra.css";
+---
+
+<!tshtml>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses - Launch Your Online Course Without Touching Tech</title>
+    <meta name="description" content="We build your website, host your course, and help you grow. Your technical partner in course creation." />
+    <link rel="icon" type="image/png" href="/favicon.svg" />
+  </head>
+  <body class="bg-white text-slate-900 antialiased">
+    <PublicNavbar client:load />
+    <main>
+      <Hero client:load />
+      <TrustSection />
+      <PartnerSection />
+      <Products />
+      <ResourcesCTA />
+      <Leadmagnet client:visible />
+      <Faq client:visible />
+    </main>
+    <Footer />
+  </body>
+</html>

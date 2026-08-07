@@ -6,7 +6,6 @@ import {
     Shield,
     Zap,
 } from "lucide-react";
-import Link from "next/link";
 
 export default function PartnerSection() {
     return (
@@ -185,7 +184,7 @@ export default function PartnerSection() {
                         Join us and choose a partner, not just a platform.
                     </p>
                     <a
-                        href={"https://app.buisnesstools.in/onboarding"}
+                        href={"https://app.trywhiteowl.com/onboarding"}
                         className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 px-8 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl"
                     >
                         Launch Your Course Website

@@ -1,4 +1,3 @@
-import Link from "next/link";
 import {
     Card,
     CardContent,
@@ -75,12 +74,12 @@ export default function Products() {
                             </div>
                         </CardContent>
                         <CardFooter className="pt-6">
-                            <Link
+                            <a
                                 href={"/courses"}
                                 className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200"
                             >
                                 Start Creating Courses
-                            </Link>
+                            </a>
                         </CardFooter>
                     </Card>
 
@@ -125,12 +124,12 @@ export default function Products() {
                             </div>
                         </CardContent>
                         <CardFooter className="pt-6">
-                            <Link
+                            <a
                                 href={"/digital-products"}
                                 className="w-full bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200"
                             >
                                 Launch Digital Products
-                            </Link>
+                            </a>
                         </CardFooter>
                     </Card>
 
@@ -184,12 +183,12 @@ export default function Products() {
                             </div>
                         </CardContent>
                         <CardFooter className="pt-6">
-                            <Link
+                            <a
                                 href={"/communities"}
                                 className="w-full bg-teal-600 hover:bg-teal-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200"
                             >
                                 Build Your Community
-                            </Link>
+                            </a>
                         </CardFooter>
                     </Card>
                 </div>

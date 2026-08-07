@@ -1,15 +1,13 @@
 "use client";
 import { ChevronDown } from "lucide-react";
-import Image from "next/image";
 import { useState } from "react";
 import faqImage from "@/assets/FAQ.png";
-
 export default function Faq() {
     const [activeFaq, setActiveFaq] = useState<number | null>(null);
 
     return (
         <section className="py-20 bg-white md:grid md:grid-cols-3">
-            <Image src={faqImage} alt="Faq" />
+            <img src={typeof faqImage === "string" ? faqImage : faqImage.src} alt="Faq" className="w-full h-auto object-cover" />
             <div className="max-w-3xl mx-auto px-4 col-span-2">
                 <h2 className="text-3xl font-bold text-center mb-16">
                     Got Questions? We&apos;ve Got Answers
@@ -66,8 +64,8 @@ const FaqItem = ({
 const faqs = [
     {
         question:
-            "Do I need any technical knowledge or coding skills to use Buisnesstools.in?",
-        answer: "Absolutely not! Buisnesstools.in is designed for educators and creators, not developers. We handle all the technical complexities – from website setup and hosting to secure video streaming and payment integration – so you can focus entirely on creating and teaching.",
+            "Do I need any technical knowledge or coding skills to use WhiteOwl?",
+        answer: "Absolutely not! WhiteOwl is designed for educators and creators, not developers. We handle all the technical complexities – from website setup and hosting to secure video streaming and payment integration – so you can focus entirely on creating and teaching.",
     },
     {
         question: "How does payment processing work for my courses?",
@@ -75,7 +73,7 @@ const faqs = [
     },
     {
         question: "Do you offer a free trial or a free tier to get started?",
-        answer: "While we do not offer a free tier, we are confident in the value and comprehensive support our platform provides. We encourage you to book a personalized demo with our team to see Buisnesstools.in in action and understand how it perfectly fits your course creation needs before committing.",
+        answer: "While we do not offer a free tier, we are confident in the value and comprehensive support our platform provides. We encourage you to book a personalized demo with our team to see WhiteOwl in action and understand how it perfectly fits your course creation needs before committing.",
     },
     {
         question: "Can I use my own domain name for my course website?",
@@ -92,7 +90,7 @@ const faqs = [
     {
         question:
             "What if I already have students or courses on another platform?",
-        answer: `We understand that migrating can seem daunting. Our team can guide you through the process of transferring your existing content and student data to Buisnesstools.in, making the transition as smooth as possible so you don't lose progress. contact us at +91 9867624595`,
+        answer: `We understand that migrating can seem daunting. Our team can guide you through the process of transferring your existing content and student data to Whiteowl, making the transition as smooth as possible so you don't lose progress. contact us at +91 9867624595`,
     },
     {
         question:

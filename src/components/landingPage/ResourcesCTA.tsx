@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { Book, FileText, Download, ArrowRight } from "lucide-react";
 
 const resources = [
@@ -78,13 +77,13 @@ export default function ResourcesCTA() {
                 </div>
 
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-                    <Link
+                    <a
                         href="/resources"
                         className="px-10 py-5 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold rounded-full shadow-lg shadow-blue-200 hover:shadow-xl hover:scale-105 transition-all duration-300 flex items-center gap-3"
                     >
                         Access All Free Resources
                         <ArrowRight size={20} />
-                    </Link>
+                    </a>
                     <span className="text-slate-500 font-medium tracking-wide">
                         100% Free • No Credit Card Required
                     </span>

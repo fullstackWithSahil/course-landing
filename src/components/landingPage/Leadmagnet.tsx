@@ -1,5 +1,3 @@
-"use client";
-import Image from "next/image";
 import consultancy from "@/assets/consultancy.png";
 import { Input } from "../ui/input";
 import { useState } from "react";
@@ -59,13 +57,10 @@ export default function Leadmagnet() {
                     <div className="flex justify-center">
                         <div className="relative">
                             <div className="absolute inset-0 bg-white/20 rounded-3xl blur-2xl"></div>
-                            <Image
-                                src={consultancy}
+                            <img
+                                src={typeof consultancy === "string" ? consultancy : consultancy.src}
                                 alt="Free Consultancy - Course Creation Expert"
-                                height={400}
-                                width={600}
-                                className="relative rounded-2xl shadow-2xl"
-                                priority
+                                className="relative rounded-2xl shadow-2xl w-full max-w-[600px] h-auto"
                             />
                         </div>
                     </div>
