@@ -41,7 +41,7 @@ export default function PricingCard({
 		<div
 			className={`p-8 rounded-xl shadow-lg transition-transform transform hover:scale-105 relative ${
 				highlighted
-					? "bg-blue-600 text-white ring-4 ring-blue-200"
+					? "bg-blue-600 ring-4 ring-blue-200"
 					: "bg-white"
 			}`}
 		>
@@ -88,16 +88,16 @@ export default function PricingCard({
 				))}
 			</ul>
 			<div className="pb-2 sm:pt-4 space-y-3">
-				<a
-					href={"https://buisnesstools.com/onboarding"}
-					className={`w-full flex items-center justify-center cursor-pointer py-3 rounded-lg font-semibold text-lg transition ${
-						highlighted
-						? "bg-white text-blue-600 hover:bg-gray-100"
-						: "bg-blue-600 text-white hover:bg-blue-700"
-					}`}
-				>
-					Get Started
-				</a>
+			<a
+                href="https://buisnesstools.com/onboarding"
+                className={`w-full flex items-center justify-center cursor-pointer py-3 rounded-lg font-semibold text-lg transition ${
+                    highlighted
+                    ? "bg-white text-blue-600 hover:bg-gray-100"
+                    : "bg-blue-600 text-white hover:bg-blue-700"
+                }`}
+            >
+                Get Started
+			</a>
 			</div>
 		</div>
 	);

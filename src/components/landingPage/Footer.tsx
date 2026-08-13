@@ -57,7 +57,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="#pricing"
+                                    href="/pricing"
                                     className="hover:text-white focus:text-white focus:outline-none"
                                 >
                                     Pricing
@@ -73,7 +73,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="https://trywhiteowl.com/docs/course/getting-started"
+                                    href="/resources"
                                     className="hover:text-white focus:text-white focus:outline-none"
                                 >
                                     Resources

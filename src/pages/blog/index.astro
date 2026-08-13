@@ -1,0 +1,263 @@
+---
+import type { MarkdownInstance } from "astro";
+import "@/styles/extra.css";
+import PublicNavbar from "@/components/landingPage/PublicNavbar";
+import Footer from "@/components/landingPage/Footer";
+
+interface Frontmatter {
+    title?: string;
+    excerpt?: string;
+    date?: string;
+    category?: string;
+    image?: string;
+}
+
+const blogs = Object.values(
+    import.meta.glob<MarkdownInstance<Frontmatter>>("./*.md", {
+        eager: true,
+    }),
+);
+
+const getTitle = (blog: MarkdownInstance<Frontmatter>) => {
+    if (blog.frontmatter?.title) {
+        return blog.frontmatter.title;
+    }
+
+    return blog.file
+        .split("/")
+        .pop()
+        ?.replace(".md", "")
+        .replace(/-/g, " ")
+        .replace(/\b\w/g, (char) => char.toUpperCase());
+};
+
+const getDescription = (blog: MarkdownInstance<Frontmatter>) => {
+    return (
+        blog.frontmatter?.excerpt ||
+        "Read this article to learn more about building and growing your online business."
+    );
+};
+
+const sortedBlogs = blogs.sort(
+    (a, b) =>
+        new Date(b.frontmatter?.date || 0).getTime() -
+        new Date(a.frontmatter?.date || 0).getTime(),
+);
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Blog | WhiteOwl</title>
+        <meta
+            name="description"
+            content="Insights, guides and resources for course creators and digital product businesses."
+        />
+    </head>
+
+    <body>
+        <PublicNavbar client:load />
+        <main class="mx-5 my-5">
+            <section class="blog-header">
+                <p class="eyebrow">WHITEOWL BLOG</p>
+
+                <h1>
+                    Learn. Build.
+                    <span>Grow.</span>
+                </h1>
+
+                <p class="intro">
+                    Practical guides, insights and strategies to help you build
+                    and grow your online business.
+                </p>
+            </section>
+
+            <section class="blog-grid">
+                {
+                    sortedBlogs.map((blog) => (
+                        <a href={blog.url} class="blog-card">
+                            {blog.frontmatter?.image && (
+                                <img
+                                    src={blog.frontmatter.image}
+                                    alt={getTitle(blog)}
+                                    class="blog-image"
+                                />
+                            )}
+
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    {blog.frontmatter?.category && (
+                                        <span>{blog.frontmatter.category}</span>
+                                    )}
+
+                                    {blog.frontmatter?.date && (
+                                        <time datetime={blog.frontmatter.date}>
+                                            {new Date(
+                                                blog.frontmatter.date,
+                                            ).toLocaleDateString("en-US", {
+                                                year: "numeric",
+                                                month: "short",
+                                                day: "numeric",
+                                            })}
+                                        </time>
+                                    )}
+                                </div>
+
+                                <h2>{getTitle(blog)}</h2>
+
+                                <p>{getDescription(blog)}</p>
+
+                                <span class="read-more">Read article →</span>
+                            </div>
+                        </a>
+                    ))
+                }
+            </section>
+        </main>
+        <Footer client:load />
+    </body>
+</html>
+<style>
+    :global(*) {
+        box-sizing: border-box;
+    }
+
+    :global(body) {
+        margin: 0;
+        font-family:
+            Inter,
+            ui-sans-serif,
+            system-ui,
+            -apple-system,
+            BlinkMacSystemFont,
+            "Segoe UI",
+            sans-serif;
+        background: #fff;
+        color: #111;
+    }
+
+    .blog-header {
+        max-width: 720px;
+        margin-bottom: 64px;
+    }
+
+    .eyebrow {
+        margin: 0 0 16px;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        color: #666;
+    }
+
+    h1 {
+        margin: 0;
+        font-size: clamp(42px, 6vw, 72px);
+        line-height: 1;
+        letter-spacing: -0.04em;
+        font-weight: 800;
+    }
+
+    h1 span {
+        color: #777;
+    }
+
+    .intro {
+        max-width: 620px;
+        margin: 24px 0 0;
+        color: #666;
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    .blog-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+    }
+
+    .blog-card {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        text-decoration: none;
+        color: inherit;
+        border: 1px solid #e8e8e8;
+        border-radius: 16px;
+        background: #fff;
+        transition:
+            transform 0.2s ease,
+            box-shadow 0.2s ease;
+    }
+
+    .blog-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+    }
+
+    .blog-image {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        background: #f3f3f3;
+    }
+
+    .blog-content {
+        display: flex;
+        flex-direction: column;
+        padding: 24px;
+        height: 100%;
+    }
+
+    .blog-meta {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        margin-bottom: 14px;
+        font-size: 12px;
+        color: #777;
+    }
+
+    .blog-meta span {
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+
+    .blog-content h2 {
+        margin: 0 0 12px;
+        font-size: 22px;
+        line-height: 1.25;
+        letter-spacing: -0.02em;
+    }
+
+    .blog-content p {
+        margin: 0;
+        color: #666;
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .read-more {
+        margin-top: 24px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    @media (max-width: 900px) {
+        .blog-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 600px) {
+        .blog-page {
+            padding: 56px 20px;
+        }
+
+        .blog-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
