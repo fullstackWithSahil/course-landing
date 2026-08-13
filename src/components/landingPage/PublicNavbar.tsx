@@ -6,7 +6,7 @@ import {
 } from "@/components/ui/accordion";
 import { ChevronDown, X } from "lucide-react";
 import { useState } from "react";
-import logo from "@/assets/logo.1141418a.png";
+import logo from "@/assets/logo.png";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -28,7 +28,7 @@ export default function PublicNavbar() {
           className="flex items-center gap-2 cursor-pointer"
           href="/"
         >
-          <img src={typeof logo === "string" ? logo : logo.src} alt="logo" width={50} height={50} />
+          <img src={typeof logo === "string" ? logo : logo.src} alt="logo" height={100} />
           <h1 className="text-3xl font-extrabold">Courses</h1>
         </a>
         <div className="flex items-center gap-3">
