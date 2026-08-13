@@ -28,8 +28,7 @@ export default function PublicNavbar() {
           className="flex items-center gap-2 cursor-pointer"
           href="/"
         >
-          <img src={typeof logo === "string" ? logo : logo.src} alt="logo" height={100} />
-          <h1 className="text-3xl font-extrabold">Courses</h1>
+          <img src={typeof logo === "string" ? logo : logo.src} alt="logo" height={90} />
         </a>
         <div className="flex items-center gap-3">
           <button
