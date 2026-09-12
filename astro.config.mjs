@@ -40,25 +40,6 @@ export default defineConfig({
                     ],
                 },
                 {
-                    label: "API docs",
-                    items: [
-                        // Each item here is one entry in the navigation menu.
-                        { label: "Overview", slug: "docs/api/overview" },
-                        { label: "Create keys", slug: "docs/api/create" },
-                        { label: "Email api", slug: "docs/api/email" },
-                        { label: "Leads api", slug: "docs/api/leads" },
-                        { label: "Common errors", slug: "docs/api/errors" },
-                    ],
-                },
-                {
-                    label: "Blogging",
-                    items: [
-                        { label: "Overview", slug: "docs/blogging/getting-started" },
-                        { label: "Concepts", slug: "docs/blogging/concepts" },
-                        { label: "Markdown", slug: "docs/blogging/markdown" },
-                    ],
-                },
-                {
                     label: "Payments",
                     items: [
                         { label: "Overview", slug: "docs/payments/getting-started" },
