@@ -79,7 +79,7 @@ export default function AboutUsPage() {
 							</h2>
 							<div className="space-y-6 text-lg text-slate-700 leading-relaxed">
 								<p>
-									<strong className="text-slate-900">Whitewowl is a passionate two-person team based in India</strong> with a big dream: empowering knowledge creators to build thriving online businesses.
+									<strong className="text-slate-900">Whitewowl is a passionate two-person team</strong> with a big dream: empowering knowledge creators to build thriving online businesses.
 								</p>
 								<p>
 									We understand that starting a course or community isn't just about learning software—<strong className="text-slate-900">it's about building a sustainable business.</strong> And that journey can feel overwhelming.
