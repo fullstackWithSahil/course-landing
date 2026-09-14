@@ -27,6 +27,7 @@ export default function Card({
 
     const handleDownload = async () => {
         try {
+            console.log("clicked")
             if (isSubmitting) return;
             if (!email || !email.includes("@")) {
                 toast.error("Please enter a valid email address");

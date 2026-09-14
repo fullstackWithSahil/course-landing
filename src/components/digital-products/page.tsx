@@ -33,7 +33,7 @@ export default function DigitalProductsPage() {
                 <div className="max-w-5xl mx-auto relative z-10 text-center">
                     <div className="inline-block bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20 mb-6">
                         <span className="text-sm font-semibold text-white">
-                            Digital Products (coming soon)
+                            Digital Products
                         </span>
                     </div>
                     <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
@@ -45,14 +45,16 @@ export default function DigitalProductsPage() {
                         hosting.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <button className="bg-white hover:bg-slate-100 text-slate-900 font-bold py-4 px-8 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl inline-flex items-center justify-center">
+                        <a
+                            href="https://app.trywhiteowl.com/onboarding"
+                            className="bg-white hover:bg-slate-100 text-slate-900 font-bold py-4 px-8 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl inline-flex items-center justify-center">
                             Start Selling Products
                             <ArrowRight className="w-5 h-5 ml-2" />
-                        </button>
-                        <button className="bg-transparent hover:bg-white/10 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-200 border-2 border-white/30 hover:border-white/50 inline-flex items-center justify-center">
+                        </a>
+                        {/*<button className="bg-transparent hover:bg-white/10 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-200 border-2 border-white/30 hover:border-white/50 inline-flex items-center justify-center">
                             <Package className="w-5 h-5 mr-2" />
                             See Examples
-                        </button>
+                        </button>*/}
                     </div>
                 </div>
             </section>

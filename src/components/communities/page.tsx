@@ -115,6 +115,7 @@ export default function CommunitiesPage() {
                             src={
                                 "https://assets.trywhiteowl.com/blog/kajabi-vs-buisnesstools/chat-ui.png"
                             }
+                            className="w-full"
                         />
                     </div>
                 </div>

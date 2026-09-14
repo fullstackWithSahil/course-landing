@@ -90,8 +90,8 @@ export default function CoursesPage() {
             {/* Course Builder Preview */}
             <section className="py-20 px-6 bg-white">
                 <div className="max-w-6xl mx-auto">
-                    <div className="grid lg:grid-cols-2 gap-16 items-center">
-                        <div>
+                    <div className="grid lg:grid-cols-5 gap-16 items-center">
+                        <div className="col-start-1 col-end-3">
                             <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
                                 Intuitive Course Builder
                             </h2>
@@ -151,10 +151,11 @@ export default function CoursesPage() {
                             </div>
                         </div>
 
-                        <div className="rounded-2xl aspect-square flex items-center justify-center">
+                        <div className="rounded-2xl col-start-3 col-end-6 aspect-square flex items-center justify-center">
                             <img
                                 src="https://assets.trywhiteowl.com/landingpage/course-builder.png"
                                 alt="course-builder"
+                                className="w-full my-auto"
                             />
                         </div>
                     </div>
