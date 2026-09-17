@@ -1,0 +1,180 @@
+---
+title: Creating Leads
+description: A complete guide on creating a lead or adding a lead to a list associated with your organization using WhiteOwl's public API.
+---
+
+## title: Creating a Lead
+description: A complete guide on creating a new lead record using WhiteOwl's public API, with multi-language code examples.
+
+**Endpoint Overview**
+
+Create a new lead assigned to one or more list IDs within your organization.
+
+* **HTTP Method:** `POST`
+* **Endpoint URL:** `https://api.trywhiteowl.com/api/v1/leads`
+* **Authentication:** Bearer Token (API Key)
+* **Required Permission:** `leads:create` (Ensure your API key has **Create** permission under **Leads**)
+
+---
+
+### Request Headers
+
+| Header | Type | Required | Description |
+| --- | --- | --- | --- |
+| `Authorization` | String | Yes | Bearer token format: `Bearer YOUR_API_KEY` |
+| `Content-Type` | String | Yes | `application/json` |
+
+---
+
+### Request Body
+
+| Field | Type | Required | Default | Description |
+| --- | --- | --- | --- | --- |
+| `lists` | Array (Numbers) | Yes | N/A | Array of list IDs this lead belongs to. |
+| `name` | String | No | `""` | Full name of the lead. |
+| `email` | String | No | `""` | Valid email address for the lead. |
+| `status` | String | No | `"new"` | Lead lifecycle status (e.g., `new`, `contacted`). |
+| `note` | String | No | `""` | Context or notes regarding the lead. |
+| `source` | String | No | `"unknown"` | Origin or channel source of the lead. |
+
+**Example Payload:**
+
+```json
+{
+  "name": "Alex Smith",
+  "email": "alex.smith@example.com",
+  "status": "new",
+  "note": "Signed up via inbound form",
+  "source": "landing_page",
+  "lists": [3]
+}
+
+```
+
+---
+
+### Code Examples
+
+**cURL**
+
+```bash
+curl -X POST "https://api.trywhiteowl.com/api/v1/leads" \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "Alex Smith",
+    "email": "alex.smith@example.com",
+    "status": "new",
+    "note": "Signed up via inbound form",
+    "source": "landing_page",
+    "lists": [3]
+  }'
+
+```
+
+**JavaScript (Fetch)**
+
+```javascript
+const options = {
+  method: 'POST',
+  headers: {
+    'Authorization': 'Bearer YOUR_API_KEY',
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({
+    name: "Alex Smith",
+    email: "alex.smith@example.com",
+    status: "new",
+    note: "Signed up via inbound form",
+    source: "landing_page",
+    lists: [3]
+  })
+};
+
+fetch('https://api.trywhiteowl.com/api/v1/leads', options)
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(err => console.error(err));
+
+```
+
+**Python (Requests)**
+
+```python
+import requests
+
+url = "https://api.trywhiteowl.com/api/v1/leads"
+headers = {
+    "Authorization": "Bearer YOUR_API_KEY",
+    "Content-Type": "application/json"
+}
+payload = {
+    "name": "Alex Smith",
+    "email": "alex.smith@example.com",
+    "status": "new",
+    "note": "Signed up via inbound form",
+    "source": "landing_page",
+    "lists": [3]
+}
+
+response = requests.post(url, headers=headers, json=payload)
+print(response.json())
+
+```
+
+---
+
+### Response Structure
+
+**Success Response (`200 OK`)**
+
+```json
+{
+  "success": true,
+  "message": "Leads created successfully",
+  "data": [
+    {
+      "id": 502,
+      "name": "Alex Smith",
+      "email": "alex.smith@example.com",
+      "status": "new",
+      "note": "Signed up via inbound form",
+      "source": "landing_page",
+      "lists": [3],
+      "organization": "org_12345"
+    }
+  ]
+}
+
+```
+
+**Error Responses**
+
+* **Invalid Email Format:**
+```json
+{
+  "success": false,
+  "message": "There was an error creating a lead"
+}
+
+```
+
+
+* **Missing Permissions (`403 Forbidden`):**
+```json
+{
+  "success": false,
+  "message": "Your API key does not have the 'leads:create' permission"
+}
+
+```
+
+
+* **Failed Lead Insertion:**
+```json
+{
+  "success": false,
+  "message": "There was an error creating a new lead"
+}
+
+```

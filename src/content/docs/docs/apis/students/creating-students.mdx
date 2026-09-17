@@ -1,0 +1,153 @@
+## title: Creating a Student
+description: A complete guide on creating a new student account and assigning them to a product using WhiteOwl's public API.
+
+**Endpoint Overview**
+
+Create a new student account in Clerk and save their database entry and product assignment within your organization.
+
+* **HTTP Method:** `POST`
+* **Endpoint URL:** `https://api.trywhiteowl.com/api/v1/students`
+* **Authentication:** Bearer Token (API Key)
+* **Required Permission:** `students:create` (Ensure your API key has **Create** permission under **Students**)
+
+---
+
+### Request Headers
+
+| Header | Type | Required | Description |
+| --- | --- | --- | --- |
+| `Authorization` | String | Yes | Bearer token format: `Bearer YOUR_API_KEY` |
+| `Content-Type` | String | Yes | `application/json` |
+
+---
+
+### Request Body
+
+| Field | Type | Required | Description |
+| --- | --- | --- | --- |
+| `name` | String | Yes | Full name of the student. |
+| `email` | String | Yes | Valid email address for the student. |
+| `password` | String | Yes | Initial login password for the student account. |
+| `productId` | Number | Yes | Numeric ID of the product purchased by the student. |
+
+**Example Payload:**
+
+```json
+{
+  "name": "Alex Smith",
+  "email": "alex.smith@example.com",
+  "password": "SecurePassword123!",
+  "productId": 101
+}
+
+```
+
+---
+
+### Code Examples
+
+**cURL**
+
+```bash
+curl -X POST "https://api.trywhiteowl.com/api/v1/students" \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "Alex Smith",
+    "email": "alex.smith@example.com",
+    "password": "SecurePassword123!",
+    "productId": 101
+  }'
+
+```
+
+**JavaScript (Fetch)**
+
+```javascript
+const options = {
+  method: 'POST',
+  headers: {
+    'Authorization': 'Bearer YOUR_API_KEY',
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({
+    name: "Alex Smith",
+    email: "alex.smith@example.com",
+    password: "SecurePassword123!",
+    productId: 101
+  })
+};
+
+fetch('https://api.trywhiteowl.com/api/v1/students', options)
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(err => console.error(err));
+
+```
+
+**Python (Requests)**
+
+```python
+import requests
+
+url = "https://api.trywhiteowl.com/api/v1/students"
+headers = {
+    "Authorization": "Bearer YOUR_API_KEY",
+    "Content-Type": "application/json"
+}
+payload = {
+    "name": "Alex Smith",
+    "email": "alex.smith@example.com",
+    "password": "SecurePassword123!",
+    "productId": 101
+}
+
+response = requests.post(url, headers=headers, json=payload)
+print(response.json())
+
+```
+
+---
+
+### Response Structure
+
+**Success Response (`200 OK`)**
+
+```json
+{
+  "success": true,
+  "message": "A new student was created successfully",
+  "data": [
+    {
+      "id": 2,
+      "name": "Alex Smith",
+      "email": "alex.smith@example.com",
+      "organization": "org_12345",
+      "purchase": [101],
+      "userId": "user_2xabc456"
+    }
+  ]
+}
+
+```
+
+**Error Responses**
+
+* **Invalid Product:**
+```json
+{
+  "success": false,
+  "message": "A product with id of 101 does not exist in your organization"
+}
+
+```
+
+
+* **Missing Permissions (`403 Forbidden`):**
+```json
+{
+  "success": false,
+  "message": "Your API key does not have the 'students:create' permission"
+}
+
+```

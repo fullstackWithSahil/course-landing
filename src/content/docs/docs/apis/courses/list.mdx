@@ -1,0 +1,112 @@
+---
+title: Listing all the courses using APIs
+description: This is a guide on how to use WhiteOwl's public api to get a list of all the courses with code examples in various languages
+---
+**Endpoint Overview**
+
+Retrieve a list of all courses associated with your organization.
+
+* **HTTP Method:** `GET`
+* **Endpoint URL:** `https://api.trywhiteowl.com/api/v1/courses`
+* **Authentication:** Bearer Token (API Key)
+* **Required Permission:** `course:read` (Ensure your API key has **Read** permission under **Courses**)
+
+---
+
+### Request Headers
+
+| Header | Type | Required | Description |
+| --- | --- | --- | --- |
+| `Authorization` | String | Yes | Bearer token format: `Bearer YOUR_API_KEY` |
+| `Content-Type` | String | Yes | `application/json` |
+
+---
+
+### Code Examples
+
+**cURL**
+
+```bash
+curl -X GET "https://api.trywhiteowl.com/api/v1/courses" \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json"
+
+```
+
+**JavaScript (Fetch)**
+
+```javascript
+const options = {
+  method: 'GET',
+  headers: {
+    'Authorization': 'Bearer YOUR_API_KEY',
+    'Content-Type': 'application/json'
+  }
+};
+
+fetch('https://api.trywhiteowl.com/api/v1/courses', options)
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(err => console.error(err));
+
+```
+
+**Python (Requests)**
+
+```python
+import requests
+
+url = "https://api.trywhiteowl.com/api/v1/courses"
+headers = {
+    "Authorization": "Bearer YOUR_API_KEY",
+    "Content-Type": "application/json"
+}
+
+response = requests.get(url, headers=headers)
+print(response.json())
+
+```
+
+---
+
+### Response Structure
+
+**Success Response (`200 OK`)**
+
+```json
+{
+  "success": true,
+  "message": "Courses fetched successfully",
+  "data": [
+    {
+      "id": "prod_12345",
+      "organization": "org_98765",
+      "type": "courses",
+      "title": "Introduction to Web Development",
+      "price": 49.99,
+      "created_at": "2026-01-15T10:30:00Z"
+    }
+  ]
+}
+
+```
+
+**Error Responses**
+
+* **Missing Permissions (`403 Forbidden`):**
+```json
+{
+  "success": false,
+  "message": "Your API key does not have the 'course:read' permission"
+}
+
+```
+
+* **Internal / Database Error (`500 Internal Server Error`):**
+```json
+{
+  "success": false,
+  "message": "There was an error getting the courses"
+}
+
+```

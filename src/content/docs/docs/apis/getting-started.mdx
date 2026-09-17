@@ -1,0 +1,57 @@
+---
+title: Getting started with whiteOwl public APIs
+description: This is a guide on how to get started with APIs on whiteOwl. How to create API keys, how to use them, Rate limiting and common errors
+---
+import { Aside } from '@astrojs/starlight/components';
+
+## How to create an API key
+
+Follow these steps to generate a new API key and configure its permissions:
+
+1. Navigate to the **API keys** section in your dashboard.
+2. Click on the **Create API key** button.
+3. In the modal that appears, enter a descriptive **Name** for your key.
+4. Under **Permissions**, select the specific access rights allowed for this key across your available modules (such as **Courses**, **Community**, or **Digital**):
+   - You can manually select individual checkboxes (**Create**, **Read**, **Changemetadata**, **Changeprice**).
+   - Alternatively, click **Select all** next to a section to grant full permissions for that category (or **Clear all** to revoke them).
+5. Once your desired permissions are selected, click the **Create key** button at the bottom right.
+6. An **API Key Created** pop-up will appear displaying your newly generated secret key string. Click **Copy** to save it securely. 
+
+ <Aside type="caution">
+    Copy your key immediately. It will not be shown again once you close the window.
+ </Aside>
+
+## Usage guide
+All the api endpoints use HTTP with a base url `https://api.trywhiteowl.com/api/v1/` and pass the api key as Bearer token
+
+- Base URL: `https://api.trywhiteowl.com/api/v1/`
+- Bearer token: `your API key`
+
+## Response structure
+The API response generally follows the following structure:
+```json
+{
+  "success": "boolean",
+  "message": "string",
+  "data": "data"
+}
+```
+
+## Rate limits
+All of our apis have a rate limit of 10 requests per second. If you exceed the rate limit you will receive the following error with a status code of 429:
+```json
+{
+  "success": false,
+  "message": "Rate limit exceeded"
+}
+```
+
+## Common errors and status codes
+|Status code|What it means|
+|---|---|
+|500|It is probably our fault; contact support if the problem persists|
+|401|You either have not passed the bearer token or the api key is invalid|
+|403|Your api does not have the permission to do the operation|
+|200+|Api did the operation successfully|
+
+You can get more information about the error in the response message.

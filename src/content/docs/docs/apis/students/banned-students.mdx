@@ -1,0 +1,111 @@
+## title: Getting Banned Students
+description: A complete guide on fetching all banned students within your organization using WhiteOwl's public API.
+
+**Endpoint Overview**
+
+Fetch a list of all students who have been banned within your organization.
+
+* **HTTP Method:** `GET`
+* **Endpoint URL:** `[https://api.trywhiteowl.com/api/v1/students/banned](https://api.trywhiteowl.com/api/v1/students/banned)`
+* **Authentication:** Bearer Token (API Key)
+* **Required Permission:** `students:read` (Ensure your API key has **Read** permission under **Students**)
+
+---
+
+### Request Headers
+
+| Header | Type | Required | Description |
+| --- | --- | --- | --- |
+| `Authorization` | String | Yes | Bearer token format: `Bearer YOUR_API_KEY` |
+| `Content-Type` | String | Yes | `application/json` |
+
+---
+
+### Code Examples
+
+**cURL**
+
+```bash
+curl -X GET "https://api.trywhiteowl.com/api/v1/students/banned" \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json"
+
+```
+
+**JavaScript (Fetch)**
+
+```javascript
+const options = {
+  method: 'GET',
+  headers: {
+    'Authorization': 'Bearer YOUR_API_KEY',
+    'Content-Type': 'application/json'
+  }
+};
+
+fetch('https://api.trywhiteowl.com/api/v1/students/banned', options)
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(err => console.error(err));
+
+```
+
+**Python (Requests)**
+
+```python
+import requests
+
+url = "https://api.trywhiteowl.com/api/v1/students/banned"
+headers = {
+    "Authorization": "Bearer YOUR_API_KEY",
+    "Content-Type": "application/json"
+}
+
+response = requests.get(url, headers=headers)
+print(response.json())
+
+```
+
+---
+
+### Response Structure
+
+**Success Response (`200 OK`)**
+
+```json
+{
+  "success": true,
+  "message": "Successfully fetched banned members",
+  "data": [
+    {
+      "id": 2,
+      "name": "Alex Smith",
+      "email": "alex.smith@example.com",
+      "baned": true,
+      "organization": "org_12345"
+    }
+  ]
+}
+
+```
+
+**Error Responses**
+
+* **Missing Permissions (`403 Forbidden`):**
+```json
+{
+  "success": false,
+  "message": "Your API key does not have the 'students:read' permission"
+}
+
+```
+
+
+* **Internal / Server Error:**
+```json
+{
+  "success": false,
+  "message": "There was an error getting banned students"
+}
+
+```

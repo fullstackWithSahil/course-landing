@@ -1,0 +1,189 @@
+---
+title: Sending Emails via Template
+description: A step-by-step guide on how to send emails populated from a pre-defined template using WhiteOwl's public API, complete with code examples in multiple languages.
+---
+**Endpoint Overview**
+
+Send dynamic emails to one or more recipients using a stored email template and key-value variable substitutions.
+
+* **HTTP Method:** `POST`
+* **Endpoint URL:** `https://api.trywhiteowl.com/api/v1/email/template`
+* **Authentication:** Bearer Token (API Key)
+* **Required Permission:** `email:send` (Ensure your API key has **Send** permission under **Email**)
+
+---
+
+### Request Headers
+
+| Header | Type | Required | Description |
+| --- | --- | --- | --- |
+| `Authorization` | String | Yes | Bearer token format: `Bearer YOUR_API_KEY` |
+| `Content-Type` | String | Yes | `application/json` |
+
+---
+
+### Request Body
+
+| Field | Type | Required | Description |
+| --- | --- | --- | --- |
+| `template` | Number | Yes | The numeric identifier of the email template to use. |
+| `emails` | Array (Strings) | Yes | List of valid recipient email addresses. |
+| `subject` | String | Yes | Subject line for the email. |
+| `variables` | Object | Yes | Key-value mapping matching placeholders `{{key}}` defined in the template body. |
+
+**Example Payload:**
+
+```json
+{
+  "template": 101,
+  "emails": [
+    "student@example.com",
+    "user2@example.com"
+  ],
+  "subject": "Welcome to Your New Course!",
+  "variables": {
+    "first_name": "Alex",
+    "course_name": "Fullstack Web Development"
+  }
+}
+
+```
+
+---
+
+### Code Examples
+
+**cURL**
+
+```bash
+curl -X POST "https://api.trywhiteowl.com/api/v1/email/template" \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "template": 101,
+    "emails": ["student@example.com"],
+    "subject": "Welcome to Your New Course!",
+    "variables": {
+      "first_name": "Alex",
+      "course_name": "Fullstack Web Development"
+    }
+  }'
+
+```
+
+**JavaScript (Fetch)**
+
+```javascript
+const options = {
+  method: 'POST',
+  headers: {
+    'Authorization': 'Bearer YOUR_API_KEY',
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({
+    template: 101,
+    emails: ['student@example.com'],
+    subject: 'Welcome to Your New Course!',
+    variables: {
+      first_name: 'Alex',
+      course_name: 'Fullstack Web Development'
+    }
+  })
+};
+
+fetch('https://api.trywhiteowl.com/api/v1/email/template', options)
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(err => console.error(err));
+
+```
+
+**Python (Requests)**
+
+```python
+import requests
+
+url = "https://api.trywhiteowl.com/api/v1/email/template"
+headers = {
+    "Authorization": "Bearer YOUR_API_KEY",
+    "Content-Type": "application/json"
+}
+payload = {
+    "template": 101,
+    "emails": ["student@example.com"],
+    "subject": "Welcome to Your New Course!",
+    "variables": {
+        "first_name": "Alex",
+        "course_name": "Fullstack Web Development"
+    }
+}
+
+response = requests.post(url, headers=headers, json=payload)
+print(response.json())
+
+```
+
+---
+
+### Response Structure
+
+**Success Response (`200 OK`)**
+
+```json
+{
+  "success": true,
+  "message": "Email sent successfully"
+}
+
+```
+
+**Error Responses**
+
+* **Missing Template Variables:**
+```json
+{
+  "success": false,
+  "message": "You have not provided value for variable first_name"
+}
+
+```
+
+
+* **Expired Subscription:**
+```json
+{
+  "success": false,
+  "message": "Your subscription has expired"
+}
+
+```
+
+
+* **Daily Sending Limit Reached (Non-Pro or >100 emails/day):**
+```json
+{
+  "success": false,
+  "message": "You can only send 100 emails a day"
+}
+
+```
+
+
+* **Sender Settings Unconfigured:**
+```json
+{
+  "success": false,
+  "message": "Your sender email or api keys has not been setup yet"
+}
+
+```
+
+
+* **Internal / Sending Error:**
+```json
+{
+  "success": false,
+  "message": "There was an error sendind the email"
+}
+
+```

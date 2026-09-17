@@ -1,0 +1,120 @@
+---
+title: Listing Community Members
+description: This guide covers how to retrieve members using WhiteOwl's public APIs with code examples in multiple languages.
+---
+
+## Get Community Members
+
+Retrieve a list of members belonging to a specific community.
+
+* **HTTP Method:** `GET`
+* **Endpoint URL:** `https://api.trywhiteowl.com/api/v1/communities/member/:id`
+* **Authentication:** Bearer Token (API Key)
+
+### Path Parameters
+
+| Parameter | Type | Required | Description |
+| --- | --- | --- | --- |
+| `id` | String | Yes | The identifier of the community to fetch members for. |
+
+---
+
+### Request Headers
+
+| Header | Type | Required | Description |
+| --- | --- | --- | --- |
+| `Authorization` | String | Yes | Bearer token format: `Bearer YOUR_API_KEY` |
+| `Content-Type` | String | Yes | `application/json` |
+
+---
+
+### Code Examples
+
+**cURL**
+
+```bash
+curl -X GET "https://api.trywhiteowl.com/api/v1/communities/member/101" \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json"
+
+```
+
+**JavaScript (Fetch)**
+
+```javascript
+const communityId = '101';
+const options = {
+  method: 'GET',
+  headers: {
+    'Authorization': 'Bearer YOUR_API_KEY',
+    'Content-Type': 'application/json'
+  }
+};
+
+fetch(`https://api.trywhiteowl.com/api/v1/communities/member/${communityId}`, options)
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(err => console.error(err));
+
+```
+
+**Python (Requests)**
+
+```python
+import requests
+
+community_id = "101"
+url = f"https://api.trywhiteowl.com/api/v1/communities/member/{community_id}"
+headers = {
+    "Authorization": "Bearer YOUR_API_KEY",
+    "Content-Type": "application/json"
+}
+
+response = requests.get(url, headers=headers)
+print(response.json())
+
+```
+
+---
+
+### Response Structure
+
+**Success Response (`200 OK`)**
+
+```json
+{
+  "success": true,
+  "message": "Members fetched successfully",
+  "data": [
+    {
+      "memberId": "usr_9988",
+      "name": "Jane Doe",
+      "email": "jane@example.com",
+      "role": "member",
+      "joined_at": "2026-03-01T10:00:00Z"
+    }
+  ]
+}
+
+```
+
+**Error Responses**
+
+* **Missing Community ID:**
+```json
+{
+  "success": false,
+  "message": "Id is required"
+}
+
+```
+
+
+* **Internal / Service Error:**
+```json
+{
+  "success": false,
+  "message": "There was an error getting members"
+}
+
+```
