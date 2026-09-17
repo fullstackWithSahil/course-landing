@@ -105,9 +105,9 @@ export default defineConfig({
                             label: "Leads",
                             items: [
                                 {label:"list leads",slug:"docs/apis/leads/getting-leads"},
-                                {label:"create leads",slug:"docs/apis/leads/create-leads"},
+                                {label:"create leads",slug:"docs/apis/leads/create-lead"},
                                 {label:"updating leads",slug:"docs/apis/leads/updating-leads"},
-                                {label:"deleting leads",slug:"docs/apis/leads/deleting-leads"},
+                                {label:"deleting leads",slug:"docs/apis/leads/deleting-lead"},
                             ],
                             collapsed:true
                         }, 
@@ -116,7 +116,7 @@ export default defineConfig({
                             items: [
                                 {label:"list students",slug:"docs/apis/students/getting-students"},
                                 {label:"creating students",slug:"docs/apis/students/creating-students"},
-                                {label:"banned students",slug:"docs/apis/students/baned-students"},
+                                {label:"banned students",slug:"docs/apis/students/banned-students"},
                                 {label:"banning students",slug:"docs/apis/students/banning"},
                                 {label:"unbanning students",slug:"docs/apis/students/unbanning"},
                             ],
