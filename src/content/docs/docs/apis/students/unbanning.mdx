@@ -1,0 +1,137 @@
+---
+title: Unbanning Students
+description: A complete guide on unbanning students associated with your organization.
+---
+**Endpoint Overview**
+
+Unban a previously banned student record in your organization.
+
+* **HTTP Method:** `POST`
+* **Endpoint URL:** `https://api.trywhiteowl.com/api/v1/students/unban`
+* **Authentication:** Bearer Token (API Key)
+* **Required Permission:** `students:unban` (Ensure your API key has **Unban** permission under **Students**)
+
+---
+
+### Request Headers
+
+| Header | Type | Required | Description |
+| --- | --- | --- | --- |
+| `Authorization` | String | Yes | Bearer token format: `Bearer YOUR_API_KEY` |
+| `Content-Type` | String | Yes | `application/json` |
+
+---
+
+### Request Body
+
+| Field | Type | Required | Description |
+| --- | --- | --- | --- |
+| `studentId` | Number | Conditional | Numeric database ID of the student. Required if `userId` is omitted. |
+| `userId` | String | Conditional | Auth user string ID of the student. Required if `studentId` is omitted. |
+
+**Example Payload:**
+
+```json
+{
+  "studentId": 2
+}
+
+```
+
+---
+
+### Code Examples
+
+**cURL**
+
+```bash
+curl -X POST "https://api.trywhiteowl.com/api/v1/students/unban" \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "studentId": 2
+  }'
+
+```
+
+**JavaScript (Fetch)**
+
+```javascript
+const options = {
+  method: 'POST',
+  headers: {
+    'Authorization': 'Bearer YOUR_API_KEY',
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({
+    studentId: 2
+  })
+};
+
+fetch('https://api.trywhiteowl.com/api/v1/students/unban', options)
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(err => console.error(err));
+
+```
+
+**Python (Requests)**
+
+```python
+import requests
+
+url = "https://api.trywhiteowl.com/api/v1/students/unban"
+headers = {
+    "Authorization": "Bearer YOUR_API_KEY",
+    "Content-Type": "application/json"
+}
+payload = {"studentId": 2}
+
+response = requests.post(url, headers=headers, json=payload)
+print(response.json())
+
+```
+
+---
+
+### Response Structure
+
+**Success Response (`200 OK`)**
+
+```json
+{
+  "success": true,
+  "message": "Student successfully unbanned",
+  "data": [
+    {
+      "id": 2,
+      "name": "Alex Smith",
+      "email": "alex.smith@example.com",
+      "baned": false,
+      "organization": "org_12345"
+    }
+  ]
+}
+
+```
+
+**Error Responses**
+
+* **Missing Identifier:**
+```json
+{
+  "success": false,
+  "message": "You have to either provide studentId or userID to unban the student"
+}
+
+```
+
+
+* **Student Not Found:**
+```json
+{
+  "success": false,
+  "message": "This student probably does not exist in your organization"
+}
+
+```

@@ -1,0 +1,143 @@
+---
+title: Getting Digital Product Folder Structure
+description: A guide on how to use WhiteOwl's public API to retrieve the folder and file tree structure of a digital product, with code examples in various languages.
+---
+**Endpoint Overview**
+
+Fetch the nested folder and file structure for a specific digital product belonging to your organization.
+
+* **HTTP Method:** `GET`
+* **Endpoint URL:** `https://api.trywhiteowl.com/api/v1/digital/:productId`
+* **Authentication:** Bearer Token (API Key)
+* **Required Permission:** `digital:read` (Ensure your API key has **Read** permission under **Digital**)
+
+---
+
+### Path Parameters
+
+| Parameter | Type | Required | Description |
+| --- | --- | --- | --- |
+| `productId` | Number | Yes | The numeric identifier of the digital product. |
+
+---
+
+### Request Headers
+
+| Header | Type | Required | Description |
+| --- | --- | --- | --- |
+| `Authorization` | String | Yes | Bearer token format: `Bearer YOUR_API_KEY` |
+| `Content-Type` | String | Yes | `application/json` |
+
+---
+
+### Code Examples
+
+**cURL**
+
+```bash
+curl -X GET "https://api.trywhiteowl.com/api/v1/digital/101" \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json"
+
+```
+
+**JavaScript (Fetch)**
+
+```javascript
+const productId = 101;
+const options = {
+  method: 'GET',
+  headers: {
+    'Authorization': 'Bearer YOUR_API_KEY',
+    'Content-Type': 'application/json'
+  }
+};
+
+fetch(`https://api.trywhiteowl.com/api/v1/digital/${productId}`, options)
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(err => console.error(err));
+
+```
+
+**Python (Requests)**
+
+```python
+import requests
+
+product_id = 101
+url = f"https://api.trywhiteowl.com/api/v1/digital/{product_id}"
+headers = {
+    "Authorization": "Bearer YOUR_API_KEY",
+    "Content-Type": "application/json"
+}
+
+response = requests.get(url, headers=headers)
+print(response.json())
+
+```
+
+---
+
+### Response Structure
+
+**Success Response (`200 OK`)**
+
+```json
+{
+  "success": true,
+  "data": [
+    {
+      "id": 1,
+      "name": "Module 1 - Assets",
+      "type": "folder",
+      "children": [
+        {
+          "id": 12,
+          "name": "guidebook.pdf",
+          "type": "file",
+          "url": "https://storage.trywhiteowl.com/files/guidebook.pdf"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "README.md",
+      "type": "file",
+      "url": "https://storage.trywhiteowl.com/files/readme.md"
+    }
+  ]
+}
+
+```
+
+**Error Responses**
+
+* **Invalid or Non-Numeric Product ID (`400 Bad Request`):**
+```json
+{
+  "success": false,
+  "message": "productId must be a valid number"
+}
+
+```
+
+
+* **Missing Permissions (`403 Forbidden`):**
+```json
+{
+  "success": false,
+  "message": "Your API key does not have the 'digital:read' permission"
+}
+
+```
+
+
+* **Internal / Database Error (`500 Internal Server Error`):**
+```json
+{
+  "success": false,
+  "message": "There was an error getting the folder structure"
+}
+
+```

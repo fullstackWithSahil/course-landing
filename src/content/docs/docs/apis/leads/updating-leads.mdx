@@ -1,0 +1,189 @@
+---
+title: Updating Leads
+description: A complete guide on updating metadata of the leads associated with your organization using WhiteOwl's public API.
+---
+
+**Endpoint Overview**
+
+Update fields on an existing lead by specifying the lead `id` and the proposed `changes` object.
+
+* **HTTP Method:** `PATCH`
+* **Endpoint URL:** `https://api.trywhiteowl.com/api/v1/leads`
+* **Authentication:** Bearer Token (API Key)
+* **Required Permission:** `leads:edit` (Ensure your API key has **Edit** permission under **Leads**)
+
+---
+
+### Request Headers
+
+| Header | Type | Required | Description |
+| --- | --- | --- | --- |
+| `Authorization` | String | Yes | Bearer token format: `Bearer YOUR_API_KEY` |
+| `Content-Type` | String | Yes | `application/json` |
+
+---
+
+### Request Body
+
+| Field | Type | Required | Description |
+| --- | --- | --- | --- |
+| `id` | Number | Yes | Numeric ID of the lead to update. |
+| `changes` | Object | Yes | An object containing partial fields to update. |
+
+**Supported Fields in `changes` Object:**
+
+| Property | Type | Required | Description |
+| --- | --- | --- | --- |
+| `name` | String | No | Updated full name. |
+| `email` | String | No | Updated valid email address. |
+| `status` | String | No | Updated lifecycle status (e.g., `contacted`, `qualified`). |
+| `note` | String | No | Updated note string. |
+| `source` | String | No | Updated lead source string. |
+
+**Example Payload:**
+
+```json
+{
+  "id": 502,
+  "changes": {
+    "status": "contacted",
+    "note": "Follow-up email sent on Monday"
+  }
+}
+
+```
+
+---
+
+### Code Examples
+
+**cURL**
+
+```bash
+curl -X PATCH "https://api.trywhiteowl.com/api/v1/leads" \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "id": 502,
+    "changes": {
+      "status": "contacted",
+      "note": "Follow-up email sent on Monday"
+    }
+  }'
+
+```
+
+**JavaScript (Fetch)**
+
+```javascript
+const options = {
+  method: 'PATCH',
+  headers: {
+    'Authorization': 'Bearer YOUR_API_KEY',
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({
+    id: 502,
+    changes: {
+      status: "contacted",
+      note: "Follow-up email sent on Monday"
+    }
+  })
+};
+
+fetch('https://api.trywhiteowl.com/api/v1/leads', options)
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(err => console.error(err));
+
+```
+
+**Python (Requests)**
+
+```python
+import requests
+
+url = "https://api.trywhiteowl.com/api/v1/leads"
+headers = {
+    "Authorization": "Bearer YOUR_API_KEY",
+    "Content-Type": "application/json"
+}
+payload = {
+    "id": 502,
+    "changes": {
+        "status": "contacted",
+        "note": "Follow-up email sent on Monday"
+    }
+}
+
+response = requests.patch(url, headers=headers, json=payload)
+print(response.json())
+
+```
+
+---
+
+### Response Structure
+
+**Success Response (`200 OK`)**
+
+```json
+{
+  "success": true,
+  "message": "Lead edited successfully",
+  "previous": [
+    {
+      "id": 502,
+      "name": "Alex Smith",
+      "email": "alex.smith@example.com",
+      "status": "new",
+      "note": "Signed up via inbound form",
+      "source": "landing_page",
+      "lists": [3]
+    }
+  ],
+  "updated": [
+    {
+      "id": 502,
+      "name": "Alex Smith",
+      "email": "alex.smith@example.com",
+      "status": "contacted",
+      "note": "Follow-up email sent on Monday",
+      "source": "landing_page",
+      "lists": [3]
+    }
+  ]
+}
+
+```
+
+**Error Responses**
+
+* **Missing Required Input:**
+```json
+{
+  "success": false,
+  "message": "The id and changes fields are required"
+}
+
+```
+
+
+* **Lead Not Found:**
+```json
+{
+  "success": false,
+  "message": "A lead with id of 502 does not exist in your organization"
+}
+
+```
+
+
+* **Missing Permissions (`403 Forbidden`):**
+```json
+{
+  "success": false,
+  "message": "Your API key does not have the 'leads:edit' permission"
+}
+
+```

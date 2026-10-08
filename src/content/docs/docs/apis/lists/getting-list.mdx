@@ -1,0 +1,117 @@
+---
+title: Getting Lead Lists
+description: A complete guide on retrieving all lead lists associated with your organization using WhiteOwl's public API, including multi-language code examples.
+---
+
+**Endpoint Overview**
+
+Fetch all lead lists created under your organization.
+
+* **HTTP Method:** `GET`
+* **Endpoint URL:** `https://api.trywhiteowl.com/api/v1/lists`
+* **Authentication:** Bearer Token (API Key)
+* **Required Permission:** `list:read` (Ensure your API key has **Read** permission under **List**)
+
+---
+
+### Request Headers
+
+| Header | Type | Required | Description |
+| --- | --- | --- | --- |
+| `Authorization` | String | Yes | Bearer token format: `Bearer YOUR_API_KEY` |
+| `Content-Type` | String | Yes | `application/json` |
+
+---
+
+### Code Examples
+
+**cURL**
+
+```bash
+curl -X GET "https://api.trywhiteowl.com/api/v1/lists" \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json"
+
+```
+
+**JavaScript (Fetch)**
+
+```javascript
+const options = {
+  method: 'GET',
+  headers: {
+    'Authorization': 'Bearer YOUR_API_KEY',
+    'Content-Type': 'application/json'
+  }
+};
+
+fetch('https://api.trywhiteowl.com/api/v1/lists', options)
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(err => console.error(err));
+
+```
+
+**Python (Requests)**
+
+```python
+import requests
+
+url = "https://api.trywhiteowl.com/api/v1/lists"
+headers = {
+    "Authorization": "Bearer YOUR_API_KEY",
+    "Content-Type": "application/json"
+}
+
+response = requests.get(url, headers=headers)
+print(response.json())
+
+```
+
+---
+
+### Response Structure
+
+**Success Response (`200 OK`)**
+
+```json
+{
+  "success": true,
+  "message": "Lists fetched successfully",
+  "data": [
+    {
+      "id": 1,
+      "name": "Newsletter Subscribers",
+      "organization": "org_12345",
+      "created_at": "2026-09-17T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "name": "Product Beta Testers",
+      "organization": "org_12345",
+      "created_at": "2026-09-17T11:30:00Z"
+    }
+  ]
+}
+
+```
+
+**Error Responses**
+
+* **Missing Permissions (`403 Forbidden`):**
+```json
+{
+  "success": false,
+  "message": "Your API key does not have the 'list:read' permission"
+}
+
+```
+
+* **Internal / Database Error:**
+```json
+{
+  "success": false,
+  "message": "There was an error getting lead list"
+}
+
+```

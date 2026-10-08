@@ -1,0 +1,147 @@
+---
+title: Deleting Lead Lists
+description: A complete guide on deleting a lead lists in your organization using WhiteOwl's public API, including multi-language code examples.
+---
+
+**Endpoint Overview**
+
+Delete an existing lead list by its ID.
+
+> **Cascading Behavior:** Deleting a list automatically handles associated leads:
+> * Leads that belong **only** to this list will be permanently deleted.
+> * Leads associated with **multiple lists** will remain intact, with only this list ID removed from their list memberships.
+> 
+> 
+
+* **HTTP Method:** `DELETE`
+* **Endpoint URL:** `https://api.trywhiteowl.com/api/v1/lists/:id`
+* **Authentication:** Bearer Token (API Key)
+* **Required Permission:** `list:delete` (Ensure your API key has **Delete** permission under **List**)
+
+---
+
+### Path Parameters
+
+| Parameter | Type | Required | Description |
+| --- | --- | --- | --- |
+| `id` | Number | Yes | The numeric identifier of the lead list to delete. |
+
+---
+
+### Request Headers
+
+| Header | Type | Required | Description |
+| --- | --- | --- | --- |
+| `Authorization` | String | Yes | Bearer token format: `Bearer YOUR_API_KEY` |
+| `Content-Type` | String | Yes | `application/json` |
+
+---
+
+### Code Examples
+
+**cURL**
+
+```bash
+curl -X DELETE "https://api.trywhiteowl.com/api/v1/lists/3" \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json"
+
+```
+
+**JavaScript (Fetch)**
+
+```javascript
+const listId = 3;
+const options = {
+  method: 'DELETE',
+  headers: {
+    'Authorization': 'Bearer YOUR_API_KEY',
+    'Content-Type': 'application/json'
+  }
+};
+
+fetch(`https://api.trywhiteowl.com/api/v1/lists/${listId}`, options)
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(err => console.error(err));
+
+```
+
+**Python (Requests)**
+
+```python
+import requests
+
+list_id = 3
+url = f"https://api.trywhiteowl.com/api/v1/lists/{list_id}"
+headers = {
+    "Authorization": "Bearer YOUR_API_KEY",
+    "Content-Type": "application/json"
+}
+
+response = requests.delete(url, headers=headers)
+print(response.json())
+
+```
+
+---
+
+### Response Structure
+
+**Success Response (`200 OK`)**
+
+```json
+{
+  "success": true,
+  "message": "The list was deleted successfully",
+  "data": [
+    {
+      "id": 3,
+      "name": "Q4 Webinar Attendees",
+      "organization": "org_12345"
+    }
+  ]
+}
+
+```
+
+**Error Responses**
+
+* **Invalid or Non-Numeric ID (`400 Bad Request`):**
+```json
+{
+  "success": false,
+  "message": "Invalid list id"
+}
+
+```
+
+
+* **List Not Found (`404 Not Found`):**
+```json
+{
+  "success": false,
+  "message": "No list with this id found in your organization"
+}
+
+```
+
+
+* **Missing Permissions (`403 Forbidden`):**
+```json
+{
+  "success": false,
+  "message": "Your API key does not have the 'list:delete' permission"
+}
+
+```
+
+
+* **Internal Server Error (`500 Internal Server Error`):**
+```json
+{
+  "success": false,
+  "message": "There was an error deleting the lead list"
+}
+
+```

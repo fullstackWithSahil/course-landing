@@ -1,0 +1,160 @@
+---
+title: Creating Folders and Uploading Files for Digital Products
+description: A complete guide on using WhiteOwl's public API to create folders within a digital product's directory structure, with code examples in multiple languages.
+---
+## Create Folder
+
+Create a new folder (or retrieve an existing one with the same name/location) inside a digital product.
+
+* **HTTP Method:** `POST`
+* **Endpoint URL:** `https://api.trywhiteowl.com/api/v1/digital/folder`
+* **Authentication:** Bearer Token (API Key)
+* **Required Permission:** `digital:create` (Ensure your API key has **Create** permission under **Digital**)
+
+---
+
+### Request Headers
+
+| Header | Type | Required | Description |
+| --- | --- | --- | --- |
+| `Authorization` | String | Yes | Bearer token format: `Bearer YOUR_API_KEY` |
+| `Content-Type` | String | Yes | `application/json` |
+
+---
+
+### Request Body
+
+| Field | Type | Required | Description |
+| --- | --- | --- | --- |
+| `name` | String | Yes | The name of the folder to create. |
+| `productId` | Number | Yes | The numeric identifier of the digital product. |
+| `parentId` | Number | No | The numeric identifier of the parent folder (if creating a subfolder). |
+
+**Example Payload:**
+
+```json
+{
+  "name": "Module 1 - Resources",
+  "productId": 101,
+  "parentId": 12
+}
+
+```
+
+---
+
+### Code Examples
+
+**cURL**
+
+```bash
+curl -X POST "https://api.trywhiteowl.com/api/v1/digital/folder" \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "Module 1 - Resources",
+    "productId": 101,
+    "parentId": 12
+  }'
+
+```
+
+**JavaScript (Fetch)**
+
+```javascript
+const options = {
+  method: 'POST',
+  headers: {
+    'Authorization': 'Bearer YOUR_API_KEY',
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({
+    name: 'Module 1 - Resources',
+    productId: 101,
+    parentId: 12
+  })
+};
+
+fetch('https://api.trywhiteowl.com/api/v1/digital/folder', options)
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(err => console.error(err));
+
+```
+
+**Python (Requests)**
+
+```python
+import requests
+
+url = "https://api.trywhiteowl.com/api/v1/digital/folder"
+headers = {
+    "Authorization": "Bearer YOUR_API_KEY",
+    "Content-Type": "application/json"
+}
+payload = {
+    "name": "Module 1 - Resources",
+    "productId": 101,
+    "parentId": 12
+}
+
+response = requests.post(url, headers=headers, json=payload)
+print(response.json())
+
+```
+
+---
+
+### Response Structure
+
+**Success Response – New Folder Created (`200 OK`)**
+
+```json
+{
+  "success": true,
+  "existing": false,
+  "folder": {
+    "id": 45,
+    "name": "Module 1 - Resources",
+    "parent_id": 12,
+    "product": 101,
+    "organization": "org_12345"
+  }
+}
+
+```
+
+**Success Response – Existing Folder Found (`200 OK`)**
+
+```json
+{
+  "existing": true,
+  "folder": {
+    "id": 45,
+    "name": "Module 1 - Resources",
+    "parent_id": 12,
+    "product": 101,
+    "organization": "org_12345"
+  }
+}
+
+```
+
+**Error Responses**
+
+* **Missing Permissions (`403 Forbidden`):**
+```json
+{
+  "success": false,
+  "message": "Your API key does not have the 'digital:create' permission"
+}
+
+```
+
+* **Internal Error (`500 Internal Server Error`):**
+```json
+{
+  "success": false,
+  "message": "There was an error creating the folder"
+}
+```

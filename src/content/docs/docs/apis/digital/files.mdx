@@ -1,0 +1,137 @@
+---
+title: Uploading Files for Digital Products
+description: A complete guide on using WhiteOwl's public API to upload files within a digital product's directory structure, with code examples in multiple languages.
+---
+
+## Upload File
+
+Upload a binary file directly into a digital product folder using `multipart/form-data`.
+
+* **HTTP Method:** `POST`
+* **Endpoint URL:** `https://api.trywhiteowl.com/api/v1/digital/file`
+* **Authentication:** Bearer Token (API Key)
+* **Required Permission:** `digital:create` (Ensure your API key has **Create** permission under **Digital**)
+
+---
+
+### Request Headers
+
+| Header | Type | Required | Description |
+| --- | --- | --- | --- |
+| `Authorization` | String | Yes | Bearer token format: `Bearer YOUR_API_KEY` |
+| `Content-Type` | String | Yes | `multipart/form-data` |
+
+---
+
+### Form Data Fields
+
+| Field | Type | Required | Description |
+| --- | --- | --- | --- |
+| `file` | File | Yes | The file binary to upload. |
+| `productId` | String | Yes | The product ID associated with the file. |
+| `parentId` | String | Yes | The folder ID where the file should be placed. |
+
+---
+
+### Code Examples
+
+**cURL**
+
+```bash
+curl -X POST "https://api.trywhiteowl.com/api/v1/digital/file" \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -F "file=@/path/to/workbook.pdf" \
+  -F "productId=101" \
+  -F "parentId=45"
+
+```
+
+**JavaScript (Fetch)**
+
+```javascript
+const formData = new FormData();
+formData.append('file', fileInput.files[0]);
+formData.append('productId', '101');
+formData.append('parentId', '45');
+
+const options = {
+  method: 'POST',
+  headers: {
+    'Authorization': 'Bearer YOUR_API_KEY'
+  },
+  body: formData
+};
+
+fetch('https://api.trywhiteowl.com/api/v1/digital/file', options)
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(err => console.error(err));
+
+```
+
+**Python (Requests)**
+
+```python
+import requests
+
+url = "https://api.trywhiteowl.com/api/v1/digital/file"
+headers = {
+    "Authorization": "Bearer YOUR_API_KEY"
+}
+files = {
+    "file": open("workbook.pdf", "rb")
+}
+data = {
+    "productId": "101",
+    "parentId": "45"
+}
+
+response = requests.post(url, headers=headers, files=files, data=data)
+print(response.json())
+
+```
+
+---
+
+### Response Structure
+
+**Success Response (`200 OK`)**
+
+```json
+{
+  "success": true,
+  "message": "File created successfully"
+}
+
+```
+
+**Error Responses**
+
+* **Missing File (`400 Bad Request`):**
+```json
+{
+  "success": false,
+  "message": "File is required"
+}
+
+```
+
+
+* **Missing Parameters:**
+```json
+{
+  "success": false,
+  "message": "parentId and productId are required"
+}
+
+```
+
+
+* **Internal / Upload Error (`500 Internal Server Error`):**
+```json
+{
+  "success": false,
+  "message": "There was an error uploading the file"
+}
+
+```

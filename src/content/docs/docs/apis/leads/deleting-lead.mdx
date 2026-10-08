@@ -1,0 +1,131 @@
+---
+title: Deleting Leads
+description: A complete guide on deleting leads associated with your organization using WhiteOwl's public API.
+---
+**Endpoint Overview**
+
+Delete an individual lead by its numeric identifier.
+
+* **HTTP Method:** `DELETE`
+* **Endpoint URL:** `https://api.trywhiteowl.com/api/v1/leads/:id`
+* **Authentication:** Bearer Token (API Key)
+* **Required Permission:** `leads:delete` (Ensure your API key has **Delete** permission under **Leads**)
+
+---
+
+### Path Parameters
+
+| Parameter | Type | Required | Description |
+| --- | --- | --- | --- |
+| `id` | Number | Yes | The numeric identifier of the lead to delete. |
+
+---
+
+### Request Headers
+
+| Header | Type | Required | Description |
+| --- | --- | --- | --- |
+| `Authorization` | String | Yes | Bearer token format: `Bearer YOUR_API_KEY` |
+| `Content-Type` | String | Yes | `application/json` |
+
+---
+
+### Code Examples
+
+**cURL**
+
+```bash
+curl -X DELETE "https://api.trywhiteowl.com/api/v1/leads/502" \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json"
+
+```
+
+**JavaScript (Fetch)**
+
+```javascript
+const leadId = 502;
+const options = {
+  method: 'DELETE',
+  headers: {
+    'Authorization': 'Bearer YOUR_API_KEY',
+    'Content-Type': 'application/json'
+  }
+};
+
+fetch(`https://api.trywhiteowl.com/api/v1/leads/${leadId}`, options)
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(err => console.error(err));
+
+```
+
+**Python (Requests)**
+
+```python
+import requests
+
+lead_id = 502
+url = f"https://api.trywhiteowl.com/api/v1/leads/{lead_id}"
+headers = {
+    "Authorization": "Bearer YOUR_API_KEY",
+    "Content-Type": "application/json"
+}
+
+response = requests.delete(url, headers=headers)
+print(response.json())
+
+```
+
+---
+
+### Response Structure
+
+**Success Response (`200 OK`)**
+
+```json
+{
+  "success": true,
+  "message": "The lead was deleted successfullly",
+  "data": [
+    {
+      "id": 502,
+      "name": "Alex Smith",
+      "email": "alex.smith@example.com",
+      "organization": "org_12345"
+    }
+  ]
+}
+
+```
+
+**Error Responses**
+
+* **Missing Identifier:**
+```json
+{
+  "success": false,
+  "message": "id is a reuired fiel and should be passes as a search param"
+}
+
+```
+
+
+* **Missing Permissions (`403 Forbidden`):**
+```json
+{
+  "success": false,
+  "message": "Your API key does not have the 'leads:delete' permission"
+}
+
+```
+
+
+* **Internal / Database Error:**
+```json
+{
+  "success": false,
+  "message": "There was an error deleting the lead"
+}
+
+```
