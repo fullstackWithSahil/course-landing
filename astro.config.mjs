@@ -50,75 +50,75 @@ export default defineConfig({
                 {
                     label: "Api",
                     items: [
-                        {label:"getting started",slug:"docs/apis/getting-started"},
+                        {label:"getting started",slug:"docs/apis/v1/getting-started"},
                         {
                             label: "Courses",
                             items: [
-                                {label:"list courses",slug:"docs/apis/courses/list"},
-                                {label:"edit metadata",slug:"docs/apis/courses/edit"},
+                                {label:"list courses",slug:"docs/apis/v1/courses/list"},
+                                {label:"edit metadata",slug:"docs/apis/v1/courses/edit"},
                             ],
                             collapsed:true
                         },
                         {
                             label: "Communities",
                             items: [
-                                {label:"list communities",slug:"docs/apis/communities/list"},
-                                {label:"create channel",slug:"docs/apis/communities/channel"},
-                                {label:"list members",slug:"docs/apis/communities/members"},
-                                {label:"Ban member",slug:"docs/apis/communities/ban"},
-                                {label:"UnBan member",slug:"docs/apis/communities/unban"},
+                                {label:"list communities",slug:"docs/apis/v1/communities/list"},
+                                {label:"create channel",slug:"docs/apis/v1/communities/channel"},
+                                {label:"list members",slug:"docs/apis/v1/communities/members"},
+                                {label:"Ban member",slug:"docs/apis/v1/communities/ban"},
+                                {label:"UnBan member",slug:"docs/apis/v1/communities/unban"},
                             ],
                             collapsed:true
                         },
                         {
                             label: "Digital products",
                             items: [
-                                {label:"list products",slug:"docs/apis/digital/list"},
-                                {label:"Edit metadata",slug:"docs/apis/digital/edit"},
-                                {label:"Get folder structure",slug:"docs/apis/digital/folder-structure"},
-                                {label:"Create folder",slug:"docs/apis/digital/folders"},
-                                {label:"Create file",slug:"docs/apis/digital/files"},
+                                {label:"list products",slug:"docs/apis/v1/digital/list"},
+                                {label:"Edit metadata",slug:"docs/apis/v1/digital/edit"},
+                                {label:"Get folder structure",slug:"docs/apis/v1/digital/folder-structure"},
+                                {label:"Create folder",slug:"docs/apis/v1/digital/folders"},
+                                {label:"Create file",slug:"docs/apis/v1/digital/files"},
                             ],
                             collapsed:true
                         },
                         {
                             label: "Email",
                             items: [
-                                {label:"list templates",slug:"docs/apis/email/template"},
-                                {label:"create templates",slug:"docs/apis/email/create-template"},
-                                {label:"deleting templates",slug:"docs/apis/email/deleting-template"},
-                                {label:"send email",slug:"docs/apis/email/send-email"},
-                                {label:"send templates",slug:"docs/apis/email/send-template"},
+                                {label:"list templates",slug:"docs/apis/v1/email/template"},
+                                {label:"create templates",slug:"docs/apis/v1/email/create-template"},
+                                {label:"deleting templates",slug:"docs/apis/v1/email/deleting-template"},
+                                {label:"send email",slug:"docs/apis/v1/email/send-email"},
+                                {label:"send templates",slug:"docs/apis/v1/email/send-template"},
                             ],
                             collapsed:true
                         },
                         {
                             label: "Lists",
                             items: [
-                                {label:"Getting list",slug:"docs/apis/lists/getting-list"},
-                                {label:"Creating list",slug:"docs/apis/lists/create-list"},
-                                {label:"Deleting list",slug:"docs/apis/lists/deleting-list"},
+                                {label:"Getting list",slug:"docs/apis/v1/lists/getting-list"},
+                                {label:"Creating list",slug:"docs/apis/v1/lists/create-list"},
+                                {label:"Deleting list",slug:"docs/apis/v1/lists/deleting-list"},
                             ],
                             collapsed:true
                         }, 
                         {
                             label: "Leads",
                             items: [
-                                {label:"list leads",slug:"docs/apis/leads/getting-leads"},
-                                {label:"create leads",slug:"docs/apis/leads/create-lead"},
-                                {label:"updating leads",slug:"docs/apis/leads/updating-leads"},
-                                {label:"deleting leads",slug:"docs/apis/leads/deleting-lead"},
+                                {label:"list leads",slug:"docs/apis/v1/leads/getting-leads"},
+                                {label:"create leads",slug:"docs/apis/v1/leads/create-lead"},
+                                {label:"updating leads",slug:"docs/apis/v1/leads/updating-leads"},
+                                {label:"deleting leads",slug:"docs/apis/v1/leads/deleting-lead"},
                             ],
                             collapsed:true
                         }, 
                         {
                             label: "Students",
                             items: [
-                                {label:"list students",slug:"docs/apis/students/getting-students"},
-                                {label:"creating students",slug:"docs/apis/students/creating-students"},
-                                {label:"banned students",slug:"docs/apis/students/banned-students"},
-                                {label:"banning students",slug:"docs/apis/students/banning"},
-                                {label:"unbanning students",slug:"docs/apis/students/unbanning"},
+                                {label:"list students",slug:"docs/apis/v1/students/getting-students"},
+                                {label:"creating students",slug:"docs/apis/v1/students/creating-students"},
+                                {label:"banned students",slug:"docs/apis/v1/students/banned-students"},
+                                {label:"banning students",slug:"docs/apis/v1/students/banning"},
+                                {label:"unbanning students",slug:"docs/apis/v1/students/unbanning"},
                             ],
                             collapsed:true
                         },
