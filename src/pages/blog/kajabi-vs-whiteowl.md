@@ -4,7 +4,7 @@ title: "Kajabi vs WhiteOwl"
 date: "2025-09-16"
 excerpt: "A detailed comparision between kajabi and teachable"
 ---
-![Kajabi vs Teachable](https://assets.trywhiteowl.com/Kajabi-vs-Teachable.png)
+![Kajabi vs Teachable](https://assets.trywhiteowl.com/blog/kajabi-vs-buisnesstools/hero.png)
 
 # WhiteOwl vs. Kajabi: Choose a Partner, Not Just a Platform
 

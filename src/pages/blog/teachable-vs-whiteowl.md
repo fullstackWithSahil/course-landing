@@ -5,7 +5,7 @@ date: "2025-09-16"
 excerpt: "A detailed comparision between teachable and WhiteOwl"
 ---
 
-![Kajabi vs Teachable](https://assets.trywhiteowl.com/Kajabi-vs-Teachable.png)
+![buisnesstools vs Teachable](https://assets.trywhiteowl.com/teachable-vs-buisnesstools.png)
 # WhiteOwl vs. Teachable: Choose a Partner, Not Just a Platform
 
 Starting an online course business is hard. It's not just about a website and a video player — you also need to set up workspaces, integrate payment providers, get approved by Google, configure Google Search Console, write legal pages, and handle a dozen other details most course creators never anticipated.

@@ -4,7 +4,7 @@ title: "Udemy vs Whiteowl"
 date: "2025-11-7"
 excerpt: "This is a detailed blog camparing features and positioning of Udemy and Whiteowl"
 ---
-![Udemy vs Whiteowl](https://assets.Whiteowl.in/Udemy-VS-Whiteowl.png)
+![Udemy vs Whiteowl](https://assets.trywhiteowl.com/Udemy-VS-buisnesstools.png)
 
 # Philosophy
 
